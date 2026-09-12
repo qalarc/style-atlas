@@ -110,6 +110,12 @@ async function zaiChat(message, history, key) {
   throw new Error(lastErr);
 }
 
+async function loadKV(env, key) {
+  try {
+    const v = await env.RATINGS.get(key);
+    return v ? JSON.parse(v) : {};
+  } catch { return {}; }
+}
 async function loadRatings(env) {
   try {
     const v = await env.RATINGS.get("all");
@@ -133,6 +139,63 @@ export default {
       });
     }
     // ---------- ratings: GET aggregate, POST a vote ----------
+    // ---------- tracked outbound links: /out/<CODE>?to=<url> ----------
+    const ALLOWED_OUT = [
+      "qalarc.com", "tradez.au", "x10.au", "gmux.ai", "endispute.com.au",
+      "volkus.net", "chanalyse.org", "rwf.qalarc.com", "qalarc.ai",
+      "github.com/qalarc", "sahha.com", "healthapi.fit", "qalnet",
+    ];
+    const mOut = url.pathname.match(/^\/out\/([A-Za-z0-9-]+)\/?$/);
+    if (mOut && request.method === "GET") {
+      const code = mOut[1];
+      const validCodes = new Set(DIGEST.map((l) => l.split("|")[0]));
+      const to = url.searchParams.get("to") || "";
+      let host = "";
+      try { host = new URL(to).hostname; } catch {}
+      const allowed = ALLOWED_OUT.some((d) =>
+        host === d || host.endsWith("." + d) || (host + "/").startsWith(d + "/"));
+      if (!validCodes.has(code) || !to || !allowed) {
+        return new Response("blocked outbound link", { status: 400 });
+      }
+      // record follow-on interest
+      const out = await loadKV(env, "out");
+      const slot = out[code] || {};
+      slot[to] = (slot[to] || 0) + 1;
+      out[code] = slot;
+      await env.RATINGS.put("out", JSON.stringify(out));
+      // decorated destination so the qalarc concierge sees the origin
+      const u = new URL(to);
+      u.searchParams.set("ref", "style-atlas");
+      u.searchParams.set("style", code);
+      return Response.redirect(u.toString(), 302);
+    }
+
+    // ---------- view counter ----------
+    if (url.pathname === "/api/view" && request.method === "POST") {
+      let code = "";
+      try { code = String((await request.json()).code || ""); } catch {}
+      const validCodes = new Set(DIGEST.map((l) => l.split("|")[0]));
+      if (!validCodes.has(code)) {
+        return new Response(JSON.stringify({ error: "bad code" }),
+          { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const views = await loadKV(env, "views");
+      views[code] = (views[code] || 0) + 1;
+      await env.RATINGS.put("views", JSON.stringify(views));
+      return new Response(JSON.stringify({ views }), {
+        headers: { "Content-Type": "application/json", ...CORS } });
+    }
+    if (url.pathname === "/api/views" && request.method === "GET") {
+      return new Response(JSON.stringify({ views: await loadKV(env, "views") }), {
+        headers: { "Content-Type": "application/json", ...CORS } });
+    }
+    // concierge-facing aggregate: views + outbound interest per style
+    if (url.pathname === "/api/interest" && request.method === "GET") {
+      const [views, out] = await Promise.all([loadKV(env, "views"), loadKV(env, "out")]);
+      return new Response(JSON.stringify({ views, outbound: out }), {
+        headers: { "Content-Type": "application/json", ...CORS } });
+    }
+
     if (url.pathname === "/api/ratings" && request.method === "GET") {
       const all = await loadRatings(env);
       return new Response(JSON.stringify({ ratings: all }), {

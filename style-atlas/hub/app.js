@@ -9,6 +9,7 @@ const S = {
   pickSet: new Set(),
   ratings: {},                     // code -> {s: sum, c: count}
   myVotes: {},                     // code -> stars (localStorage)
+  views: {},                       // code -> count
   filters: {
     categories: new Set(), projects: new Set(), modes: new Set(),
     hues: new Set(), statuses: new Set(), tags: new Set(), search: "",
@@ -53,13 +54,29 @@ function starsHTML(code, interactive) {
   const mine = S.myVotes[code];
   const show = interactive && mine ? mine : Math.round(avg * 2) / 2;
   let out = '<span class="stars' + (interactive ? ' rate' : '') + '" data-code="' + esc(code) + '" title="' +
-    (n ? avg.toFixed(1) + '★ from ' + n + ' vote' + (n > 1 ? 's' : '') : 'no votes yet') + '">';
+    (n ? avg.toFixed(1) + '\u2605 from ' + n + ' vote' + (n > 1 ? 's' : '') : 'no votes yet') + '">';
   for (let i = 1; i <= 5; i++) {
     const cls = show >= i ? "full" : show >= i - 0.5 ? "half" : "";
-    out += '<i data-stars="' + i + '" class="' + cls + '">★</i>';
+    out += '<i data-stars="' + i + '" class="' + cls + '">\u2605</i>';
   }
-  out += '</span><span class="votes-n">' + (n ? avg.toFixed(1) + " (" + n + ")" : "—") + "</span>";
+  out += '</span><span class="votes-n">' + (n ? avg.toFixed(1) + " (" + n + ")" : "\u2014") + "</span>";
   return out;
+}
+/* hover fills RIGHT to LEFT: pointing at a star lights it and everything right of it */
+function bindStarHover(container) {
+  container.querySelectorAll(".stars.rate").forEach((wrap) => {
+    if (wrap._rtl) return;
+    wrap._rtl = true;
+    const stars = [...wrap.querySelectorAll("i")];
+    stars.forEach((st) => {
+      st.addEventListener("mouseenter", () => {
+        const v = +st.dataset.stars;
+        stars.forEach((s2) => s2.classList.toggle("pre", +s2.dataset.stars >= v));
+      });
+    });
+    wrap.addEventListener("mouseleave", () =>
+      stars.forEach((s2) => s2.classList.remove("pre")));
+  });
 }
 async function castVote(code, stars) {
   S.myVotes[code] = stars;
@@ -117,6 +134,25 @@ function paletteArray(e) {
   const p = e.palette || {};
   return [p.bg, p.surface, p.ink, p.accent, p.accent2, ...(p.extra || [])]
     .filter(Boolean).slice(0, 7);
+}
+const PROJECT_SITES = {
+  "tradez.au": "https://tradez.au",
+  "x10.au": "https://x10.au",
+  "x10.au (biz)": "https://x10.au",
+  "gmux.ai": "https://gmux.ai",
+  "gmux app": "https://gmux.ai",
+  "gmux systems": "https://gmux.ai",
+  "endispute": "https://endispute.com.au",
+  "reps_with_friends": "https://rwf.qalarc.com",
+  "qalarc.ai": "https://qalarc.ai",
+  "volkus.net": "https://volkus.net",
+  "chanalyse (monitor)": "https://chanalyse.org",
+};
+function projectSite(e) {
+  return PROJECT_SITES[e.project] || null;
+}
+function trackedOut(code, url) {
+  return `/out/${encodeURIComponent(code)}?to=${encodeURIComponent(url)}`;
 }
 function hasMount(e) { return !!(e.mount && e.mount.dir && e.mount.file); }
 function previewUrl(e) {
@@ -235,6 +271,10 @@ async function boot() {
   } catch { S.ratings = {}; }
   try { S.myVotes = JSON.parse(localStorage.getItem("atlas.votes") || "{}"); }
   catch { S.myVotes = {}; }
+  try {
+    const r = await fetch("/api/views");
+    S.views = (await r.json()).views || {};
+  } catch { S.views = {}; }
   buildSidebar();
   renderPickCount();
   const m = location.hash.match(/^#([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)$/);
@@ -531,10 +571,27 @@ async function toggleStar(code, force) {
 }
 
 /* ---------------- theater ---------------- */
+function recordView(code) {
+  try {
+    const k = "atlas.seen." + code;
+    if (sessionStorage.getItem(k)) return;   // once per session per style
+    sessionStorage.setItem(k, "1");
+  } catch {}
+  fetch("/api/view", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ code }),
+    keepalive: true,
+  }).then((r) => r.ok ? r.json() : null)
+    .then((d) => { if (d && d.views) S.views = d.views; })
+    .catch(() => {});
+}
+
 function openTheater(i) {
   if (i < 0 || i >= S.filtered.length) return;
   S.theaterIdx = i;
   $("theater").classList.add("open");
+  engageShield();
+  recordView(S.filtered[i].code);
   const e = S.filtered[i];
   history.replaceState(null, "", `#${e.code}`);
   const url = previewUrl(e);
@@ -561,6 +618,16 @@ function navTheater(dir) {
   if (!n) return;
   openTheater(((S.theaterIdx + dir) % n + n) % n);
 }
+/* iframe-focus shield: while visible, the page keeps keyboard focus so
+   ←/→ always cycle; click the shield once to interact with the preview. */
+function engageShield() {
+  const sh = $("tShield");
+  if (!sh) return;
+  sh.style.display = "grid";
+  try { document.activeElement && document.activeElement.blur(); } catch {}
+  document.body.focus && document.body.focus();
+}
+$("tShield") && ($("tShield").onclick = () => { $("tShield").style.display = "none"; });
 function closeTheater() {
   $("theater").classList.remove("open");
   $("tFrame").src = "about:blank";
@@ -576,6 +643,7 @@ function renderTheaterMeta() {
     .map((k) => `<div class="kv"><b>${k}</b><span>${esc(fonts[k])}</span></div>`).join("");
   $("tPanel").innerHTML = `
     <div class="bigcode">${esc(e.code)}</div>
+    <div id="tViews"></div><div id="tLinks"></div>
     <h2>${esc(e.name)}</h2>
     <div class="proj">${esc(e.project)} · ${esc(e.category)} · ${esc(e.mode || "")}${e.status && e.status !== "candidate" ? ` · <span style="color:var(--gold)">${esc(e.status)}</span>` : ""}</div>
     <div class="trate"><span style="color:var(--faint);font-size:12px">RATE</span>
@@ -592,11 +660,22 @@ function renderTheaterMeta() {
       <button class="tbtn primary" id="tOpen">Open full ↗</button>
       <button class="tbtn ${S.pickSet.has(e.code) ? "starred" : ""}" id="tStar">${S.pickSet.has(e.code) ? "★ Picked" : "☆ Star"}</button>
     </div>`;
+  const site = projectSite(e);
+  const ext = e.externalUrl && !hasMount(e) ? e.externalUrl
+            : (e.externalUrl && e.externalUrl !== previewUrl(e) ? e.externalUrl : null);
+  let links = "";
+  if (site) links += `<a class="tlink" href="${esc(trackedOut(e.code, site))}" target="_blank" rel="noopener">🌐 ${esc(e.project)} site ↗</a>`;
+  if (ext && ext !== site) links += `<a class="tlink" href="${esc(trackedOut(e.code, ext))}" target="_blank" rel="noopener">🔗 Live page ↗</a>`;
+  const views = S.views[e.code] || 0;
+  const viewHtml = `<div class="tviews">👁 ${views} view${views === 1 ? "" : "s"} · rated by ${(S.ratings[e.code] || {}).c || 0}</div>`;
+  $("tLinks").innerHTML = links;
+  $("tViews").innerHTML = viewHtml;
   $("tIdx").innerHTML = `<b>${S.theaterIdx + 1}</b> / ${S.filtered.length} · ${esc(e.code)}`;
   document.querySelectorAll("#tPal div").forEach((d) =>
     d.onclick = () => copyText(d.dataset.hex, d.dataset.hex));
   document.querySelectorAll("#tPanel .stars.rate i").forEach((i) =>
     i.onclick = () => castVote(e.code, +i.dataset.stars));
+  bindStarHover($("tPanel"));
   $("tSrc").onclick = () => copyText(e.source, "source path");
   $("tOpen").onclick = () => window.open(previewUrl(e), "_blank");
   $("tStar").onclick = () => toggleStar(e.code);

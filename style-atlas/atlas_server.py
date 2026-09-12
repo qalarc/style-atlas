@@ -582,6 +582,13 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/ratings":
             self.send_json({"ratings": load_ratings()})
             return
+        if path == "/api/views":
+            self.send_json({"views": load_json_file(VIEWS_PATH)})
+            return
+        if path == "/api/interest":
+            self.send_json({"views": load_json_file(VIEWS_PATH),
+                            "outbound": load_json_file(OUT_PATH)})
+            return
 
         # swatch previews
         m = re.match(r"^/swatch/([A-Za-z0-9-]+)/?$", path)
@@ -620,6 +627,34 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_file(p)
             else:
                 self.send_bytes(404, "text/plain", b"not found")
+            return
+
+        # tracked outbound links
+        m = re.match(r"^/out/([A-Za-z0-9-]+)/?$", path)
+        if m:
+            code = m.group(1)
+            to = self.path.split("to=", 1)[1].split("&")[0] if "to=" in self.path else ""
+            from urllib.parse import unquote, urlparse
+            to = unquote(to)
+            host = urlparse(to).netloc.lower()
+            allowed_domains = ("qalarc.com", "tradez.au", "x10.au", "gmux.ai",
+                               "endispute.com.au", "volkus.net", "chanalyse.org",
+                               "rwf.qalarc.com", "qalarc.ai", "sahha.com",
+                               "healthapi.fit")
+            ok = code in BY_CODE and to.startswith("https://") and any(
+                host == d or host.endswith("." + d) for d in allowed_domains)
+            if not ok:
+                self.send_bytes(400, "text/plain", b"blocked outbound link")
+                return
+            out = load_json_file(OUT_PATH)
+            slot = out.setdefault(code, {})
+            slot[to] = slot.get(to, 0) + 1
+            save_json_file(OUT_PATH, out)
+            sep = "&" if "?" in to else "?"
+            self.send_response(302)
+            self.send_header("Location",
+                             f"{to}{sep}ref=style-atlas&style={code}")
+            self.end_headers()
             return
 
         # mounted live previews: /<CODE>/...
@@ -664,6 +699,17 @@ class Handler(BaseHTTPRequestHandler):
                 )
             save_picks(picks)
             self.send_json(picks)
+            return
+        if path == "/api/view":
+            body = self.read_body()
+            code = body.get("code", "")
+            if code in BY_CODE:
+                views = load_json_file(VIEWS_PATH)
+                views[code] = views.get(code, 0) + 1
+                save_json_file(VIEWS_PATH, views)
+                self.send_json({"views": views})
+            else:
+                self.send_json({"error": "bad code"}, code=400)
             return
         if path == "/api/rate":
             body = self.read_body()
@@ -785,6 +831,23 @@ def save_picks(picks):
 
 
 RATINGS_PATH = os.path.join(HERE, "catalog", "ratings.json")
+
+VIEWS_PATH = os.path.join(HERE, "catalog", "views.json")
+OUT_PATH = os.path.join(HERE, "catalog", "outbound.json")
+
+def load_json_file(path):
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            pass
+    return {}
+
+def save_json_file(path, data):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=1)
 
 def load_ratings():
     if os.path.exists(RATINGS_PATH):
