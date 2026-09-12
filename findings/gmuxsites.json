@@ -1,0 +1,2521 @@
+[
+  {
+    "name": "Claude Cream + Coral",
+    "nativeId": "v1-claude-cream",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v1-claude-cream",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#d97757",
+      "accent2": "#d4a24c",
+      "extra": [
+        "#b85c3c",
+        "#eb9372",
+        "#1b1813",
+        "#221d15"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "serif",
+      "terminal",
+      "editorial",
+      "muted"
+    ],
+    "status": "candidate",
+    "lineage": "v1 — original one-shot; root of all later versions",
+    "signature": "Floating terminal windows in the hero with a drifting hand-indicator blob",
+    "description": "Original one-shot: warm dark cream ground with coral accents, floating terminal-window hero and a drifting hand-indicator blob.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v1-claude-cream",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Studio Projector",
+    "nativeId": "v2-studio-projector",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v2-studio-projector",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#1c1c1e",
+      "accent2": "#8a867a",
+      "extra": [
+        "#b8b3a3",
+        "#d96a4a",
+        "#e5483d",
+        "#e58a1a",
+        "#f2b33a",
+        "#4f8c4a",
+        "#1e6fa3"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "playful",
+      "matte",
+      "illustrative"
+    ],
+    "status": "candidate",
+    "lineage": "v2 — iteration on v1; adds theme selector (accent-only) and projector hero",
+    "signature": "Person silhouette in front of a projected wall of 6 agent cards with a light beam",
+    "description": "Matte playful primary palette with an accent-only theme selector (6 palettes) and a new hero: a person silhouetted before a projected wall of six agent cards with live todo list and beam.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v2-studio-projector",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Full-Site Themes",
+    "nativeId": "v3-full-site-themes",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v3-full-site-themes",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#e5864a",
+      "accent2": "#3fb8a0",
+      "extra": [
+        "#e6c64a",
+        "#1e8e78",
+        "#c4546f",
+        "#4f8c4a",
+        "#16171c"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "both",
+    "tags": [
+      "dark",
+      "warm",
+      "themeable",
+      "playful",
+      "illustrative"
+    ],
+    "status": "candidate",
+    "lineage": "v3 — iteration on v2; projector scene locked dark, themes now restyle the whole site",
+    "signature": "Eight full-site palettes (Studio, Playground, Forest, Citrus, Ocean, Rose, Graphite, Midnight)",
+    "description": "Projector hero locked to its best dark look; the theme selector now restyles the entire site (neutrals + accents) with 8 palettes and scenario 4 goes gesture-first.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v3-full-site-themes",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Forest Fonts",
+    "nativeId": "v4-forest-fonts",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v4-forest-fonts",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#4f8c4a",
+      "accent2": "#e5864a",
+      "extra": [
+        "#3d7a4e",
+        "#d4a84a",
+        "#6ba376",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces (+7-option title-font selector: Instrument Serif, Playfair, DM Serif, Cormorant, Space Grotesk, Inter Tight)",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "both",
+    "tags": [
+      "dark",
+      "forest",
+      "green",
+      "serif",
+      "organic"
+    ],
+    "status": "rejected",
+    "lineage": "v4 — branches from v3; superseded by v5 (which branched back from v3)",
+    "signature": "Title-font selector chips each previewing their own typeface",
+    "description": "Forest made default with a 7-face title-font selector and a richer two-people-with-shared-screen SVG scene — rejected because the picker logic broke the hero projector scene, so v5 branched from v3 instead.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v4-forest-fonts",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Title Alternation",
+    "nativeId": "v5-title-alternation",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v5-title-alternation",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces italic (rotating hero words in Pacifico, Cabin Sketch, Exo 2 italic, Viga)",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "green",
+      "serif",
+      "playful",
+      "illustrative"
+    ],
+    "status": "candidate",
+    "lineage": "v5 — branches from v3 (v4 skipped); base of v6-v8 line",
+    "signature": "Three hero words gently rotating through 5 typefaces with zero layout shift",
+    "description": "Pickers removed and Forest palette locked; three hero title words rotate through 5 faces (Fraunces italic, Pacifico, Cabin Sketch, Exo 2, Viga) and scenario 4 gets a heavily upgraded SVG scene with waving, nodding figures and sequenced speech bubbles.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v5-title-alternation",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Fraunces Only (Muted Interest)",
+    "nativeId": "v6-exo-ttl",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v6-exo-ttl",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "green",
+      "serif",
+      "muted",
+      "restrained"
+    ],
+    "status": "candidate",
+    "lineage": "v6 — successor of v5; removes the title-font alternation",
+    "signature": null,
+    "description": "Title alternation stripped back to Fraunces-only and the interest section muted (cream text stepped down to 76%/88%/62% mixes, softened glows, pulled-back ticker border).",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v6-exo-ttl",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Phone, SEO & Logo",
+    "nativeId": "v7-phone-seo-logo",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v7-phone-seo-logo",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#edefe6",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "green",
+      "serif",
+      "seo-ready"
+    ],
+    "status": "candidate",
+    "lineage": "v7 — iteration on v6; introduces logo-options.html (13 lockup variations), carried by v8-v16",
+    "signature": "Enlarged logo hand (viewBox 80→48) filling ~85% of the mark",
+    "description": "Phone-control card overlap fixed and 'gesture-based terminal multiplexer' added everywhere for SEO (meta, OG, JSON-LD); logo hand enlarged and a logo-options.html gallery of 13 lockup variations introduced (inherited by v8-v16).",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v7-phone-seo-logo",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Mobile Gesture Form",
+    "nativeId": "v8-mobile-gesture-form",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v8-mobile-gesture-form",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#edefe6",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "green",
+      "serif",
+      "mobile-first",
+      "interactive"
+    ],
+    "status": "candidate",
+    "lineage": "v8 — iteration on v7; adopts the 'Logo G' wordmark and ports the real gesture engine",
+    "signature": "Full-page camera gesture overlay with corner widget (smoothing/sensitivity sliders)",
+    "description": "Logo G adopted in the nav; the real qalarc.com gesture engine is ported (full-page overlay, palm-normalised pinch, lerp-smoothed scroll) plus a mobile pass that promotes the Phone-control card and swaps the notify form to a Google Form POST.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v8-mobile-gesture-form",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Gesture Fixed",
+    "nativeId": "v9-gesture-fixed",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v9-gesture-fixed",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#edefe6",
+        "#1a201a"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "green",
+      "serif",
+      "polished"
+    ],
+    "status": "candidate",
+    "lineage": "v9 — fixes v8's jittery gesture widget and post-disable scroll persistence",
+    "signature": "One-Euro-filtered pinch scrolling with a '✕ stop' full-teardown button",
+    "description": "Gesture widget jitter and scroll persistence fixed with a One-Euro filter on dY, bigger dead-zone, calmer defaults, and a '✕ stop' button that fully tears down camera, RAFs and state.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v9-gesture-fixed",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Gesture Playground",
+    "nativeId": "v10-gesture-playground",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v10-gesture-playground",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "organic",
+      "playful",
+      "interactive",
+      "mycelium"
+    ],
+    "status": "candidate",
+    "lineage": "v10 — abandons v9's scroll-hijack for a fullscreen playground",
+    "signature": "Pinch spawns glowing energy orbs; mycelium filaments grow toward them",
+    "description": "Scroll-hijack abandoned for a fullscreen gesture playground: mycelium filaments and twinkling tips behind the page, both hands tracked with gesture-label pills (PINCH, OPEN PALM, FIST…), and pinches spawning glowing orbs the mycelium grows toward.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v10-gesture-playground",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Organic Mycelium",
+    "nativeId": "v11-organic-mycelium",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v11-organic-mycelium",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "organic",
+      "mycelium",
+      "textured",
+      "moody"
+    ],
+    "status": "rejected",
+    "lineage": "v11 — fixes v10's render-loop bug; superseded by v12",
+    "signature": "BFS-grown mycelium networks with signal pulses and drifting spores under multiply blend",
+    "description": "Hands finally render (v10's gmxActive ordering bug) with BFS-grown demo-organic.doof.ing-style mycelium promoted over the whole site via multiply blending — rejected as too dark and too laggy.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v11-organic-mycelium",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Snappy Point Cloud",
+    "nativeId": "v12-snappy",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v12-snappy",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "glow",
+      "particles",
+      "snappy",
+      "honey",
+      "sage"
+    ],
+    "status": "candidate",
+    "lineage": "v12 — replaces v11's mycelium with a performant point cloud",
+    "signature": "~70 drifting glow points connected by proximity lines that chase fingertips",
+    "description": "Mycelium replaced by ~70 glowing points in additive light/glow blending (bright honey / sage / cream / coral) that visibly chase fingertips with 200px pull and glow lines, O(N) per frame at 30/60fps caps.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v12-snappy",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Zoom Launcher",
+    "nativeId": "v13-zoom-launcher",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v13-zoom-launcher",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "glow",
+      "interactive",
+      "resilient"
+    ],
+    "status": "candidate",
+    "lineage": "v13 — hardening iteration (basis for v15; its zoom slider fixed in v14, then dropped)",
+    "signature": "Pinch-drag flick launcher throwing momentum orbs; escalating crash watchdog",
+    "description": "Crash recovery rebuilt with a 1.2s per-frame timeout and escalating watchdog (kick → recreate Hands → full teardown), art revealed only on enable, a camera zoom slider, and a pinch-drag launcher that flicks orbs with release momentum.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v13-zoom-launcher",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Amplify (Overscan)",
+    "nativeId": "v14-amplify",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v14-amplify",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "glow",
+      "experimental"
+    ],
+    "status": "rejected",
+    "lineage": "v14 — branches from v13; rejected, so v15 branched from v13 instead",
+    "signature": "Hand-overlay canvas extending 18vmin past every viewport edge",
+    "description": "Overscan amplification maps the camera's full range onto a canvas extended 18vmin past the viewport so small hand moves cover the screen — rejected: it crashed and rendered hands off-screen.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v14-amplify",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Auto Restart",
+    "nativeId": "v15-auto-restart",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v15-auto-restart",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "glow",
+      "resilient",
+      "polished"
+    ],
+    "status": "candidate",
+    "lineage": "v15 — branched from v13 (v14 rejected); base of v16",
+    "signature": "Full MediaPipe pipeline restart with visible 'restarting…' state",
+    "description": "Fixes the chronic disappearing-hands bug with a full pipeline restart (stop stream, close Hands, 400ms wait, re-init) that detects both freeze (no results for 3s) and blind (no landmarks for 12s) failure modes.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v15-auto-restart",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Wide Canvas",
+    "nativeId": "v16-wide-canvas",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/examples/v16-wide-canvas",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#16140f",
+      "surface": "#2a241b",
+      "ink": "#f3ecd9",
+      "accent": "#3d7a4e",
+      "accent2": "#b25a38",
+      "extra": [
+        "#d4a84a",
+        "#6ba376",
+        "#0d0f14",
+        "#1a1d25"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "warm",
+      "forest",
+      "glow",
+      "privacy-conscious",
+      "widescreen"
+    ],
+    "status": "candidate",
+    "lineage": "v16 — latest version, iteration on v15",
+    "signature": "12vw overscan hand overlay plus vote counter gated at 200 real votes",
+    "description": "Hand overlay extends 12vw past each viewport edge on desktop; the vote counter stays hidden until 200 real votes, hardware/OS details are captured per vote with a visible privacy disclosure, and the enable button moves into the try section.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/examples/v16-wide-canvas",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Live Baseline — Violet Terminal",
+    "nativeId": "baseline-2026-04-20",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI agent product marketing site",
+      "developer tool landing page"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/index.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#06080f",
+      "surface": "#0d1117",
+      "ink": "#e6edf3",
+      "accent": "#a78bfa",
+      "accent2": "#00d2ff",
+      "extra": [
+        "#9180f4",
+        "#22c55e",
+        "#f97316",
+        "#1e2530",
+        "#6e7681"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code / Cascadia Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "terminal",
+      "violet",
+      "techy",
+      "mono",
+      "cool"
+    ],
+    "status": "shipped",
+    "lineage": "The live gmux.ai design before redesign work; snapshotted 2026-04-20 into this private repo",
+    "signature": "Violet-glow terminal panels on near-black navy",
+    "description": "The shipped pre-redesign gmux.ai: near-black navy terminal aesthetic with violet (#a78bfa) and cyan glows — archived here as the baseline all redesigns measured against; per the root README, deploys only ever happen from the public gmux.ai repo.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline A: Gesture-Aware Deep Space",
+    "nativeId": "version-a",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-a.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#020408",
+      "surface": "#080d14",
+      "ink": "#c8d8e8",
+      "accent": "#7c6af0",
+      "accent2": "#00d2ff",
+      "extra": [
+        "#0d1520",
+        "#1a2332",
+        "#f97316",
+        "#22c55e",
+        "#ef4444",
+        "#3b82f6",
+        "#4a5568"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code / Cascadia Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "deep-space",
+      "violet",
+      "cyan",
+      "terminal",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'a' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Deep-space variant: near-black blue ground with layered card surfaces and the purple/cyan terminal accent set.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-a.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline B: Spatial AI Workspace",
+    "nativeId": "version-b",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-b.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#04060d",
+      "surface": "rgba(255,255,255,.04)",
+      "ink": "rgba(255,255,255,.9)",
+      "accent": "#8b7cf8",
+      "accent2": "#22d3ee",
+      "extra": [
+        "rgba(255,255,255,.08)",
+        "#fb923c",
+        "#4ade80",
+        "#60a5fa",
+        "#f87171"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "glassmorphism",
+      "spatial",
+      "violet",
+      "cyan",
+      "soft"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'b' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Glassmorphism variant: frosted white-alpha panels floating on near-black, purple/cyan gradient accents.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-b.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline C: Monochrome Minimal",
+    "nativeId": "version-c",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-c.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "ink": "#f0f0f0",
+      "accent": "#ff4d00",
+      "accent2": "#00ffcc",
+      "extra": [
+        "#222",
+        "#333",
+        "#00ff88",
+        "#4d9fff",
+        "#ff8800"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "minimal",
+      "monochrome",
+      "high-contrast",
+      "sharp"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'c' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Stripped-back monochrome variant: flat #0a0a0a panels, grey rules, one hot orange accent.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-c.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline D: Pastel Dream",
+    "nativeId": "version-d",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-d.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0d0820",
+      "surface": "rgba(255,255,255,0.06)",
+      "ink": "#2a2035",
+      "accent": "#c9b8e8",
+      "accent2": "#f2c4ce",
+      "extra": [
+        "#a8d8ea",
+        "#b8e8c8",
+        "#f7c59f",
+        "#ddb8e8",
+        "#f0a090",
+        "#f8e89a"
+      ]
+    },
+    "fonts": {
+      "display": "DM Serif Display",
+      "body": "DM Sans",
+      "mono": "Space Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "pastel",
+      "glassmorphism",
+      "soft",
+      "dreamy",
+      "playful",
+      "serif"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'd' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Eight-pastel palette (lavender/blush/sky/mint/peach/lilac/coral/butter) over deep violet glass.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-d.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline E: Interactive",
+    "nativeId": "version-e",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-e.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#020308",
+      "surface": "#0d1117",
+      "ink": "#e0e8ff",
+      "accent": "#7c6af0",
+      "accent2": "#00d2ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#ef4444",
+        "#475569",
+        "#a78bfa"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "interactive",
+      "violet",
+      "cyan",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'e' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Interactive variant on near-black with ice-blue text and the violet/cyan/green/orange demo accent set.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-e.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline F: Depth Field",
+    "nativeId": "version-f",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-f.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#03050d",
+      "surface": "#0d1117",
+      "ink": "#dde8ff",
+      "accent": "#6478ff",
+      "accent2": "#a0b4ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#3b82f6",
+        "#ef4444",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "depth",
+      "periwinkle",
+      "glow",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'f' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Depth-field variant: periwinkle glows receding into near-black blue with green/orange signal colors.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-f.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline G: Voice Reactive",
+    "nativeId": "version-g",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-g.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#04000a",
+      "surface": "#0d1117",
+      "ink": "#f0e8ff",
+      "accent": "#a864ff",
+      "accent2": "#c084ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#00d2ff",
+        "#ef4444",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "purple",
+      "reactive",
+      "glow",
+      "audio"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'g' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Voice-reactive variant washed in bright purple (#a864ff/#c084ff) on a near-black violet ground.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-g.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline H: Two-Hand Conductor",
+    "nativeId": "version-h",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-h.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#010208",
+      "surface": "#0d1117",
+      "ink": "#d0e8ff",
+      "accent": "#00d2ff",
+      "accent2": "#22c55e",
+      "extra": [
+        "#3b82f6",
+        "#f97316",
+        "#ef4444",
+        "#7c6af0",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "cyan",
+      "blue",
+      "conductive",
+      "interactive"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'h' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Two-hand conductor variant: cyan/green dual-hand visuals on the darkest ground of the set.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-h.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline I: Paint Trail",
+    "nativeId": "version-i",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-i.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#000000",
+      "surface": "#0d1117",
+      "ink": "#e6edf3",
+      "accent": "#ff6b35",
+      "accent2": "#ff9166",
+      "extra": [
+        "#ff3cac",
+        "#784ba0",
+        "#22c55e",
+        "#ef4444",
+        "#7c6af0",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "paint",
+      "orange",
+      "magenta",
+      "expressive",
+      "playful"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'i' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Paint-trail variant: fingers draw vivid orange→magenta trails over a pure black canvas.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-i.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline J: Neon Noir",
+    "nativeId": "version-j",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-j.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#05020d",
+      "surface": "#0a0516",
+      "ink": "#f0e0ff",
+      "accent": "#ff2d9e",
+      "accent2": "#00f5ff",
+      "extra": [
+        "#0f0820",
+        "rgba(255,50,180,.15)",
+        "#9d4eff",
+        "#ffb800",
+        "#00ff88",
+        "#ff3355"
+      ]
+    },
+    "fonts": {
+      "display": "Rajdhani",
+      "body": "Rajdhani",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "neon",
+      "noir",
+      "cyberpunk",
+      "pink",
+      "high-contrast"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'j' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Neon-noir variant: pink/cyan/purple neon on purple-black with squared Rajdhani type.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-j.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline K: Bento",
+    "nativeId": "version-k",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-k.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#080c14",
+      "surface": "#0d1220",
+      "ink": "#f0f4ff",
+      "accent": "#7c6af0",
+      "accent2": "#22d3ee",
+      "extra": [
+        "#111827",
+        "rgba(255,255,255,.07)",
+        "#4ade80",
+        "#fb923c",
+        "#60a5fa",
+        "#a78bfa"
+      ]
+    },
+    "fonts": {
+      "display": "Instrument Serif",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "bento",
+      "grid",
+      "cards",
+      "editorial",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'k' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Bento-grid variant: rounded feature cards on navy with Instrument Serif display moments.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-k.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline L: Oscilloscope",
+    "nativeId": "version-l",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-l.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#010a02",
+      "surface": "#0d1117",
+      "ink": "#e6edf3",
+      "accent": "#00ff41",
+      "accent2": "rgba(0,255,65,.45)",
+      "extra": [
+        "rgba(0,255,65,.22)",
+        "#22c55e",
+        "#1e2530",
+        "#6e7681"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "phosphor",
+      "crt",
+      "terminal",
+      "retro",
+      "green"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'l' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Oscilloscope variant: single #00ff41 phosphor green on near-black — full CRT terminal look.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-l.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline M: Newspaper",
+    "nativeId": "version-m",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-m.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#faf7f2",
+      "surface": "#f5f0e8",
+      "ink": "#1a1410",
+      "accent": "#c0392b",
+      "accent2": "#1a4a8a",
+      "extra": [
+        "#3a3028",
+        "#7a7060",
+        "#b0a898",
+        "#c8c0b0",
+        "#1a6a3a",
+        "#c05a10"
+      ]
+    },
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Source Serif 4",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "newspaper",
+      "editorial",
+      "serif",
+      "warm",
+      "print"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'm' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "The one light letter: warm newsprint cream with black ink, hairline rules and editorial serif type.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-m.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline N: Teal Control Deck",
+    "nativeId": "version-n",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-n.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#07090e",
+      "surface": "#0c0f1a",
+      "ink": "#eef0f6",
+      "accent": "#00d4aa",
+      "accent2": "#4f8ef7",
+      "extra": [
+        "#111520",
+        "#00f0c0",
+        "#f5a623",
+        "#f56565",
+        "#48bb78",
+        "#667eea"
+      ]
+    },
+    "fonts": {
+      "display": "DM Serif Display",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "teal",
+      "dashboard",
+      "techy",
+      "clean"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'n' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Control-deck variant: teal (#00d4aa) signals on layered dark navy surfaces with a DM Serif hero.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-n.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline O: Gilded Workspace",
+    "nativeId": "version-o",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-o.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#080a10",
+      "surface": "#0c0e14",
+      "ink": "#e8ecf4",
+      "accent": "#c9a84c",
+      "accent2": "#e8c66a",
+      "extra": [
+        "#3ecfb0",
+        "#5b8dee",
+        "#e06868",
+        "#60e8d0",
+        "#363f4e"
+      ]
+    },
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "gold",
+      "luxury",
+      "premium",
+      "editorial",
+      "serif"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'o' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Luxury variant: muted gold (#c9a84c) rules and accents with Playfair Display headlines on ink-navy.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-o.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline P: Glass Command Deck",
+    "nativeId": "version-p",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-p.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#050810",
+      "surface": "rgba(255,255,255,.035)",
+      "ink": "rgba(230,240,255,.92)",
+      "accent": "#2dd4bf",
+      "accent2": "#6ea8fe",
+      "extra": [
+        "rgba(255,255,255,.07)",
+        "#5eead4",
+        "#a78bfa",
+        "#fbbf24",
+        "#fb7185",
+        "#4ade80"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "glassmorphism",
+      "teal",
+      "command",
+      "widescreen",
+      "clean"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'p' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Glass command-deck variant: ultra-subtle white-alpha panels with teal/blue fleet accents on deep navy.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-p.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "Baseline Q: Warm Violet Editorial",
+    "nativeId": "version-q",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions/version-q.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#09080e",
+      "surface": "#100f18",
+      "ink": "#ede8f5",
+      "accent": "#c4b5fd",
+      "accent2": "#f6d860",
+      "extra": [
+        "#15131f",
+        "#e9d5ff",
+        "#6ee7b7",
+        "#93c5fd",
+        "#fca5a5",
+        "#8a7fa0"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "violet",
+      "warm",
+      "editorial",
+      "serif",
+      "soft"
+    ],
+    "status": "candidate",
+    "lineage": "Letter variant 'q' of the pre-redesign live site redesign pass (baseline-2026-04-20 archive)",
+    "signature": null,
+    "description": "Warm-violet editorial variant: soft lavender/lilac accents with Fraunces display on aubergine-black.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/baseline-2026-04-20/versions",
+      "file": "version-q.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 A: Gesture-Aware Deep Space",
+    "nativeId": "versions-2026-04-18/version-a",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-a.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#020408",
+      "surface": "#080d14",
+      "ink": "#c8d8e8",
+      "accent": "#7c6af0",
+      "accent2": "#00d2ff",
+      "extra": [
+        "#0d1520",
+        "#1a2332",
+        "#f97316",
+        "#22c55e",
+        "#ef4444",
+        "#3b82f6",
+        "#4a5568"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code / Cascadia Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "deep-space",
+      "violet",
+      "cyan",
+      "terminal",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-a (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Deep-space variant: near-black blue ground with layered card surfaces and the purple/cyan terminal accent set. Byte-identical to baseline version-a — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-a.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 B: Spatial AI Workspace",
+    "nativeId": "versions-2026-04-18/version-b",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-b.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#04060d",
+      "surface": "rgba(255,255,255,.04)",
+      "ink": "rgba(255,255,255,.9)",
+      "accent": "#8b7cf8",
+      "accent2": "#22d3ee",
+      "extra": [
+        "rgba(255,255,255,.08)",
+        "#fb923c",
+        "#4ade80",
+        "#60a5fa",
+        "#f87171"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "glassmorphism",
+      "spatial",
+      "violet",
+      "cyan",
+      "soft"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-b (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Glassmorphism variant: frosted white-alpha panels floating on near-black, purple/cyan gradient accents. Byte-identical to baseline version-b — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-b.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 C: Monochrome Minimal",
+    "nativeId": "versions-2026-04-18/version-c",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-c.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "ink": "#f0f0f0",
+      "accent": "#ff4d00",
+      "accent2": "#00ffcc",
+      "extra": [
+        "#222",
+        "#333",
+        "#00ff88",
+        "#4d9fff",
+        "#ff8800"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "minimal",
+      "monochrome",
+      "high-contrast",
+      "sharp"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-c (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Stripped-back monochrome variant: flat #0a0a0a panels, grey rules, one hot orange accent. Byte-identical to baseline version-c — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-c.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 D: Pastel Dream",
+    "nativeId": "versions-2026-04-18/version-d",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-d.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0d0820",
+      "surface": "rgba(255,255,255,0.06)",
+      "ink": "#2a2035",
+      "accent": "#c9b8e8",
+      "accent2": "#f2c4ce",
+      "extra": [
+        "#a8d8ea",
+        "#b8e8c8",
+        "#f7c59f",
+        "#ddb8e8",
+        "#f0a090",
+        "#f8e89a"
+      ]
+    },
+    "fonts": {
+      "display": "DM Serif Display",
+      "body": "DM Sans",
+      "mono": "Space Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "pastel",
+      "glassmorphism",
+      "soft",
+      "dreamy",
+      "playful",
+      "serif"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-d (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Eight-pastel palette (lavender/blush/sky/mint/peach/lilac/coral/butter) over deep violet glass. Byte-identical to baseline version-d — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-d.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 E: Interactive",
+    "nativeId": "versions-2026-04-18/version-e",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-e.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#020308",
+      "surface": "#0d1117",
+      "ink": "#e0e8ff",
+      "accent": "#7c6af0",
+      "accent2": "#00d2ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#ef4444",
+        "#475569",
+        "#a78bfa"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "interactive",
+      "violet",
+      "cyan",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-e (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Interactive variant on near-black with ice-blue text and the violet/cyan/green/orange demo accent set. Byte-identical to baseline version-e — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-e.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 F: Depth Field",
+    "nativeId": "versions-2026-04-18/version-f",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-f.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#03050d",
+      "surface": "#0d1117",
+      "ink": "#dde8ff",
+      "accent": "#6478ff",
+      "accent2": "#a0b4ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#3b82f6",
+        "#ef4444",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "depth",
+      "periwinkle",
+      "glow",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-f (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Depth-field variant: periwinkle glows receding into near-black blue with green/orange signal colors. Byte-identical to baseline version-f — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-f.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 G: Voice Reactive",
+    "nativeId": "versions-2026-04-18/version-g",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-g.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#04000a",
+      "surface": "#0d1117",
+      "ink": "#f0e8ff",
+      "accent": "#a864ff",
+      "accent2": "#c084ff",
+      "extra": [
+        "#22c55e",
+        "#f97316",
+        "#00d2ff",
+        "#ef4444",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "purple",
+      "reactive",
+      "glow",
+      "audio"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-g (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Voice-reactive variant washed in bright purple (#a864ff/#c084ff) on a near-black violet ground. Byte-identical to baseline version-g — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-g.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 H: Two-Hand Conductor",
+    "nativeId": "versions-2026-04-18/version-h",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-h.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#010208",
+      "surface": "#0d1117",
+      "ink": "#d0e8ff",
+      "accent": "#00d2ff",
+      "accent2": "#22c55e",
+      "extra": [
+        "#3b82f6",
+        "#f97316",
+        "#ef4444",
+        "#7c6af0",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "cyan",
+      "blue",
+      "conductive",
+      "interactive"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-h (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Two-hand conductor variant: cyan/green dual-hand visuals on the darkest ground of the set. Byte-identical to baseline version-h — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-h.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 I: Paint Trail",
+    "nativeId": "versions-2026-04-18/version-i",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-i.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#000000",
+      "surface": "#0d1117",
+      "ink": "#e6edf3",
+      "accent": "#ff6b35",
+      "accent2": "#ff9166",
+      "extra": [
+        "#ff3cac",
+        "#784ba0",
+        "#22c55e",
+        "#ef4444",
+        "#7c6af0",
+        "#1e2530"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono / Fira Code"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "paint",
+      "orange",
+      "magenta",
+      "expressive",
+      "playful"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-i (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Paint-trail variant: fingers draw vivid orange→magenta trails over a pure black canvas. Byte-identical to baseline version-i — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-i.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 J: Neon Noir",
+    "nativeId": "versions-2026-04-18/version-j",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-j.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#05020d",
+      "surface": "#0a0516",
+      "ink": "#f0e0ff",
+      "accent": "#ff2d9e",
+      "accent2": "#00f5ff",
+      "extra": [
+        "#0f0820",
+        "rgba(255,50,180,.15)",
+        "#9d4eff",
+        "#ffb800",
+        "#00ff88",
+        "#ff3355"
+      ]
+    },
+    "fonts": {
+      "display": "Rajdhani",
+      "body": "Rajdhani",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "neon",
+      "noir",
+      "cyberpunk",
+      "pink",
+      "high-contrast"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-j (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Neon-noir variant: pink/cyan/purple neon on purple-black with squared Rajdhani type. Byte-identical to baseline version-j — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-j.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 K: Bento",
+    "nativeId": "versions-2026-04-18/version-k",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-k.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#080c14",
+      "surface": "#0d1220",
+      "ink": "#f0f4ff",
+      "accent": "#7c6af0",
+      "accent2": "#22d3ee",
+      "extra": [
+        "#111827",
+        "rgba(255,255,255,.07)",
+        "#4ade80",
+        "#fb923c",
+        "#60a5fa",
+        "#a78bfa"
+      ]
+    },
+    "fonts": {
+      "display": "Instrument Serif",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "bento",
+      "grid",
+      "cards",
+      "editorial",
+      "techy"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-k (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Bento-grid variant: rounded feature cards on navy with Instrument Serif display moments. Byte-identical to baseline version-k — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-k.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 L: Oscilloscope",
+    "nativeId": "versions-2026-04-18/version-l",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-l.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#010a02",
+      "surface": "#0d1117",
+      "ink": "#e6edf3",
+      "accent": "#00ff41",
+      "accent2": "rgba(0,255,65,.45)",
+      "extra": [
+        "rgba(0,255,65,.22)",
+        "#22c55e",
+        "#1e2530",
+        "#6e7681"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "phosphor",
+      "crt",
+      "terminal",
+      "retro",
+      "green"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-l (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "Oscilloscope variant: single #00ff41 phosphor green on near-black — full CRT terminal look. Byte-identical to baseline version-l — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-l.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "2026-04-18 M: Newspaper",
+    "nativeId": "versions-2026-04-18/version-m",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "website",
+    "useCases": [
+      "AI product landing variants",
+      "developer tool marketing"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18/version-m.html",
+    "externalUrl": null,
+    "palette": {
+      "bg": "#faf7f2",
+      "surface": "#f5f0e8",
+      "ink": "#1a1410",
+      "accent": "#c0392b",
+      "accent2": "#1a4a8a",
+      "extra": [
+        "#3a3028",
+        "#7a7060",
+        "#b0a898",
+        "#c8c0b0",
+        "#1a6a3a",
+        "#c05a10"
+      ]
+    },
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Source Serif 4",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "newspaper",
+      "editorial",
+      "serif",
+      "warm",
+      "print"
+    ],
+    "status": "candidate",
+    "lineage": "superseded by version-m (byte-identical snapshot from the earlier 2026-04-18 archive)",
+    "signature": null,
+    "description": "The one light letter: warm newsprint cream with black ink, hairline rules and editorial serif type. Byte-identical to baseline version-m — kept as the earlier dated snapshot.",
+    "mount": {
+      "dir": "/home/fivelidz/projects/gmux_site_design/archive/versions-2026-04-18",
+      "file": "version-m.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    }
+  },
+  {
+    "name": "gmux Hand-Graph Logo (Lockup)",
+    "nativeId": "logo.svg",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "logo",
+    "useCases": [
+      "brand mark",
+      "nav logo",
+      "dark-background branding"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/logo.svg",
+    "externalUrl": null,
+    "palette": {
+      "bg": null,
+      "surface": null,
+      "ink": "#e8ecf4",
+      "accent": "#00d4aa",
+      "accent2": "#00f0c0",
+      "extra": [
+        "#0a0d16",
+        "#ffffff"
+      ]
+    },
+    "fonts": {
+      "display": "Inter 800 (tight tracking)",
+      "body": null,
+      "mono": "JetBrains Mono (optional tagline)"
+    },
+    "mode": "dark",
+    "tags": [
+      "teal",
+      "hand",
+      "landmark-network",
+      "geometric",
+      "techy",
+      "glow"
+    ],
+    "status": "final",
+    "lineage": "Approved gmux logo from the main project (root README); baseline-2026-04-20 carries a copy",
+    "signature": "MediaPipe-style hand skeleton: 13 teal landmark nodes joined by bone edges, brightest fingertip pointing with a direction arrow",
+    "description": "Approved teal hand-graph lockup: a glowing MediaPipe-landmark hand (nodes + bone edges, #00d4aa with #00f0c0 index tip) beside a bold Inter 'gmux' wordmark in off-white."
+  },
+  {
+    "name": "gmux Hand-Graph Icon",
+    "nativeId": "logo-icon.svg",
+    "project": "gmux.ai",
+    "prefix": "GM",
+    "category": "logo",
+    "useCases": [
+      "app icon",
+      "favicon",
+      "avatar"
+    ],
+    "source": "/home/fivelidz/projects/gmux_site_design/logo-icon.svg",
+    "externalUrl": null,
+    "palette": {
+      "bg": null,
+      "surface": "#07090e",
+      "ink": null,
+      "accent": "#00d4aa",
+      "accent2": "#00f0c0",
+      "extra": []
+    },
+    "fonts": {
+      "display": null,
+      "body": null,
+      "mono": null
+    },
+    "mode": "dark",
+    "tags": [
+      "teal",
+      "hand",
+      "icon",
+      "animated",
+      "glow",
+      "geometric"
+    ],
+    "status": "final",
+    "lineage": "Icon companion of logo.svg (64×64, optional dark rounded-rect for standalone app-icon use)",
+    "signature": "Simplified 5-fingertip hand graph with an animated pulsing ring from the index tip",
+    "description": "Simplified 64×64 hand-graph icon with an animated direction pulse radiating from the enlarged index fingertip; drop on #07090e rounded square for app-icon use."
+  }
+]

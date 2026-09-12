@@ -1,0 +1,1226 @@
+[
+  {
+    "name": "x10.au Marketing Showcase",
+    "nativeId": "index.html",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "landing",
+    "useCases": [
+      "professional-services directory marketing page",
+      "platform landing page"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/public/index.html",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_x10_biz/public",
+      "file": "index.html",
+      "data": null,
+      "assets": "/home/fivelidz/projects/tradez_x10_biz/public/assets",
+      "shared": null
+    },
+    "externalUrl": "https://x10.au/",
+    "palette": {
+      "bg": "#0B0E0B",
+      "surface": "#141A14",
+      "ink": "#EEF2EA",
+      "accent": "#6E9A6A",
+      "accent2": "#C9A24E",
+      "extra": [
+        "#111611",
+        "#1A221A",
+        "#E8C77A",
+        "#4A6B47",
+        "#9FAE9C"
+      ]
+    },
+    "fonts": {
+      "display": "Space Grotesk",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "premium",
+      "corporate",
+      "elegant",
+      "australian",
+      "gold",
+      "minimal"
+    ],
+    "status": "candidate",
+    "lineage": "Carries tradez.au's dark gum-green + gold theme onto the x10.au brand; predates/coexists with the Ink Navy/Teal x10 design system used by directory.html",
+    "signature": "Gum-green + gold 'x10' wordmark on near-black; gradient CTA blocks with gold glow; 16-category webp icon grid",
+    "description": "Dark near-black-green marketing showcase for the x10.au professionals & specialists directory \u2014 Space Grotesk display type, gold accents, category icon grid, QR demo pop and AI chat widget."
+  },
+  {
+    "name": "x10.au Business Directory",
+    "nativeId": "directory.html",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "directory",
+    "useCases": [
+      "business directory listing/search",
+      "firm profile cards",
+      "AI concierge enquiry"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/public/directory.html",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_x10_biz/public",
+      "file": "directory.html",
+      "data": null,
+      "assets": "/home/fivelidz/projects/tradez_x10_biz/public/assets",
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#1A1A1A",
+      "accent": "#0D9488",
+      "accent2": "#0F1E2E",
+      "extra": [
+        "#2A4A6B",
+        "#5EEAD4",
+        "#E2DDD4",
+        "#E0A82E"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "corporate",
+      "serif",
+      "editorial",
+      "trustworthy",
+      "australian",
+      "clean"
+    ],
+    "status": "candidate",
+    "lineage": "First full build on the x10 Ink Navy/Teal design system (X10_DESIGN_SYSTEM.md); populated with 1,611 professional-services firms",
+    "signature": "Sticky frosted-warm-white nav, parchment firm cards with gold stars, Fraunces/Inter pairing, floating teal chat toggle",
+    "description": "The x10.au directory of 1,611 professional-services firms in the canonical Ink Navy/Teal system \u2014 warm-white paper, parchment cards, Fraunces headings, Growth Teal links and a built-in AI concierge."
+  },
+  {
+    "name": "x10.au Payments Lab",
+    "nativeId": "pay-demo.html",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "landing",
+    "useCases": [
+      "payments A/B demo (Pinch vs Pay Advantage)",
+      "fintech plan presentation",
+      "API health demo"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/public/pay-demo.html",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_x10_biz/public",
+      "file": "pay-demo.html",
+      "data": null,
+      "assets": "/home/fivelidz/projects/tradez_x10_biz/public/assets",
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#1A1A1A",
+      "accent": "#0D9488",
+      "accent2": "#0F1E2E",
+      "extra": [
+        "#2A4A6B",
+        "#5EEAD4",
+        "#E2DDD4",
+        "#0B7A74"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "corporate",
+      "fintech",
+      "clean",
+      "serif",
+      "australian"
+    ],
+    "status": "candidate",
+    "lineage": "Payments vertical demo on the x10 Ink Navy/Teal design system (X10_DESIGN_SYSTEM.md)",
+    "signature": "Side-by-side Pinch vs Pay Advantage plan cards on the x10 paper palette with a live /api/health poll",
+    "description": "A/B 'Payments Lab' demo comparing Pinch and Pay Advantage rails for retainer billing \u2014 transparent pricing tiers, live API health check and PayTo messaging in the x10 navy/teal system."
+  },
+  {
+    "name": "biz.sydney Business Finder",
+    "nativeId": "biz-sydney/index.html",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "landing",
+    "useCases": [
+      "generic find-any-business landing",
+      "local business search",
+      "AI chat enquiry"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/public/biz-sydney/index.html",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_x10_biz/public",
+      "file": "biz-sydney/index.html",
+      "data": "/home/fivelidz/projects/tradez_x10_biz/public/data",
+      "assets": "/home/fivelidz/projects/tradez_x10_biz/public/assets",
+      "shared": null
+    },
+    "externalUrl": "https://biz.sydney/",
+    "palette": {
+      "bg": "#F8F9FA",
+      "surface": "#E9ECEF",
+      "ink": "#1A1A1A",
+      "accent": "#1B3A4B",
+      "accent2": "#F4A261",
+      "extra": [
+        "#4A90A4",
+        "#2D6A4F",
+        "#95D5B2",
+        "#E8DCC8",
+        "#E76F51"
+      ]
+    },
+    "fonts": {
+      "display": "Manrope",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "friendly",
+      "rounded",
+      "warm",
+      "australian",
+      "clean",
+      "corporate"
+    ],
+    "status": "candidate",
+    "lineage": "Sibling brand to x10.au on the same platform \u2014 own 'harbour' palette (Sydney sandstone, native green, sunrise orange) documented in the page's CSS header",
+    "signature": "Sydney harbour palette with sunrise-orange CTAs, vertical badge chips (trades vs professionals) and rounded cards",
+    "description": "biz.sydney's find-any-business-in-Sydney landing \u2014 harbour blue, sandstone and sunrise orange with Manrope display type, rounded cards, category badges and an AI chat concierge."
+  },
+  {
+    "name": "x10.au Design System Preview",
+    "nativeId": "style-preview.html",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "design-system documentation",
+      "brand reference",
+      "component/typography specimen"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/style-preview.html",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_x10_biz/brand",
+      "file": "style-preview.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#1A1A1A",
+      "accent": "#0D9488",
+      "accent2": "#0F1E2E",
+      "extra": [
+        "#2A4A6B",
+        "#5EEAD4",
+        "#E2DDD4",
+        "#15803D",
+        "#B45309",
+        "#B91C1C"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "editorial",
+      "serif",
+      "design-system",
+      "corporate",
+      "premium"
+    ],
+    "status": "candidate",
+    "lineage": "Reference implementation of the tokens in brand/X10_DESIGN_SYSTEM.md",
+    "signature": "Living spec sheet \u2014 palette swatches, Fraunces/Inter/JetBrains Mono specimens and the full component set (cards, pricing tiers, testimonials) on one page",
+    "description": "The x10.au design-system doc page ('Times-ten your practice') \u2014 documents the Ink Navy/Teal palette, the Fraunces/Inter type system with JetBrains Mono for credentials, and the full component library."
+  },
+  {
+    "name": "Ledger (x10 doc style)",
+    "nativeId": "x01_ledger",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "accounting firms",
+      "bookkeepers",
+      "tax agents"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#0D9488",
+      "accent2": "#2A4A6B",
+      "extra": [
+        "#5EEAD4",
+        "#E2DDD4"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "minimal",
+      "geometric",
+      "sans",
+      "corporate",
+      "light",
+      "clean",
+      "fintech"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "Subtle ledger-paper grid-line pattern at very low opacity in the hero \u2014 a nod to the accounting heritage",
+    "description": "Mood: precise, orderly, modern-minimal \u2014 Xero/Stripe clean-fintech energy. Ideal vertical: accounting firms, bookkeepers and tax agents. Inter everywhere, geometric hero pattern, full-width trust bar."
+  },
+  {
+    "name": "Counsel (x10 doc style)",
+    "nativeId": "x02_counsel",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "law firms",
+      "conveyancers",
+      "notaries",
+      "estate planners"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#92785B",
+      "accent2": "#2A4A6B",
+      "extra": [
+        "#C4A882",
+        "#0F1E2E"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Fraunces",
+      "mono": null
+    },
+    "mode": "both",
+    "tags": [
+      "serif",
+      "elegant",
+      "traditional",
+      "formal",
+      "premium",
+      "editorial"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "Thin gold-bronze 1px rule beneath centered section headings; Ink Navy hero with paper-texture overlay",
+    "description": "Mood: established, authoritative, traditional-but-current. Ideal vertical: law firms, conveyancers, notaries, estate planners. Fraunces for headings AND body, muted gold-bronze accent, centered editorial layout."
+  },
+  {
+    "name": "Advisory (x10 doc style)",
+    "nativeId": "x03_advisory",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "business advisors",
+      "virtual CFOs",
+      "management consultants",
+      "strategy firms"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#0D9488",
+      "accent2": "#2A4A6B",
+      "extra": [
+        "#5EEAD4",
+        "#F3EFE9"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "both",
+    "tags": [
+      "premium",
+      "corporate",
+      "bold",
+      "editorial",
+      "confident",
+      "sans"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "Full-width teal 'insight bands' carrying a single large statistic or provocative quote",
+    "description": "Mood: strategic, premium, insight-driven, confident \u2014 McKinsey/BCG but more approachable. Ideal vertical: business advisors, virtual CFOs and strategy firms. Asymmetric 60/40 hero with a big Fraunces stat, teal section backgrounds, case-study deep-dives."
+  },
+  {
+    "name": "Practice (x10 doc style)",
+    "nativeId": "x04_practice",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "bookkeepers",
+      "BAS agents",
+      "small accounting practices",
+      "payroll services"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#0D9488",
+      "accent2": "#C2410C",
+      "extra": [
+        "#5EEAD4",
+        "#E2DDD4"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "warm",
+      "friendly",
+      "soft",
+      "light",
+      "sans",
+      "approachable",
+      "human"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "'How we work' numbered-steps section with warm illustrations, plus a headshot hero and FAQ accordion",
+    "description": "Mood: warm, approachable, helpful, human, local \u2014 'your trusted local bookkeeper'. Ideal vertical: solo/small-team bookkeepers, BAS agents and payroll services. Softer Inter 600 headings, parchment warmth, sparing terracotta highlight."
+  },
+  {
+    "name": "Boutique (x10 doc style)",
+    "nativeId": "x05_boutique",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "specialist tax advisors",
+      "wealth management",
+      "premium law firms",
+      "family offices"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0A1620",
+      "surface": "#F3EFE9",
+      "ink": "#FAF8F5",
+      "accent": "#92785B",
+      "accent2": "#0F1E2E",
+      "extra": [
+        "#C4A882"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "both",
+    "tags": [
+      "luxury",
+      "dark",
+      "minimal",
+      "elegant",
+      "high-contrast",
+      "premium",
+      "serif"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "Extreme restraint \u2014 128px+ section padding, 800px content column, one line of credentials, alternating dark/light full-bleed sections",
+    "description": "Mood: luxurious, exclusive, meticulous, discreet \u2014 a boutique private bank in web form. Ideal vertical: specialist tax advisors, wealth managers and premium legal practices. Full-bleed dark navy hero, large tight-tracked Fraunces, muted gold."
+  },
+  {
+    "name": "Modern Firm (x10 doc style)",
+    "nativeId": "x06_modern_firm",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "mid-sized accounting firms (5\u201320 people)",
+      "multi-partner law firms",
+      "financial planning practices"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#0D9488",
+      "accent2": "#2A4A6B",
+      "extra": [
+        "#5EEAD4",
+        "#E2DDD4"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "corporate",
+      "professional",
+      "serif",
+      "structured",
+      "comprehensive",
+      "light"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "Partner/team section with photos, names, titles and credentials \u2014 the credibility centre of a multi-partner firm",
+    "description": "Mood: professional, comprehensive, structured, capable \u2014 the standard, most complete x10 look. Ideal vertical: mid-sized multi-partner accounting/legal firms. Mega-menu nav, Fraunces H1\u2013H3 over Inter, office locations and insights/blog."
+  },
+  {
+    "name": "Compliance (x10 doc style)",
+    "nativeId": "x07_compliance",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "registered tax agents",
+      "SMSF specialists",
+      "audit firms",
+      "AFSL-holding practices"
+    ],
+    "source": "/home/fivelidz/projects/tradez_x10_biz/brand/X10_SITE_STYLES.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF8F5",
+      "surface": "#F3EFE9",
+      "ink": "#0F1E2E",
+      "accent": "#0D9488",
+      "accent2": "#2A4A6B",
+      "extra": [
+        "#E2DDD4",
+        "#5EEAD4"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "corporate",
+      "structured",
+      "document-like",
+      "sans",
+      "transparent",
+      "mono"
+    ],
+    "status": "candidate",
+    "lineage": "Design brief (Aug 2026) derived from X10_DESIGN_SYSTEM.md; implemented as renderer variants x01\u2013x07 in client_sites/templates/renderers.py. Docs are direction, not build.",
+    "signature": "'Regulatory Standing' section listing every registration with number, status and a link to the public register (e.g. TPB)",
+    "description": "Mood: authoritative, regulated, transparent, no-nonsense \u2014 credentials ARE the design. Ideal vertical: registered tax agents, SMSF specialists, audit firms and AFSL holders. Document-like structure, services as tables, tabular figures, full fee disclosure."
+  },
+  {
+    "name": "Ledger (studio style)",
+    "nativeId": "ledger",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Accountant",
+      "Bookkeeper",
+      "Tax agent",
+      "Auditor",
+      "SMSF specialist",
+      "Insolvency practitioner"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/ledger",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/ledger",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FBFAF6",
+      "surface": "#F4F1E9",
+      "ink": "#15171B",
+      "accent": "#7C2B2B",
+      "accent2": null,
+      "extra": [
+        "#E3DCC9",
+        "#CFC7B4"
+      ]
+    },
+    "fonts": {
+      "display": "Newsreader",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "textured",
+      "serif",
+      "editorial",
+      "precise",
+      "vintage",
+      "paper"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "ruled ledger paper (repeating 2.2rem rules + red margin line) and tabular-figure data rows",
+    "description": "Ruled-paper accounting practice \u2014 oxblood rules, tabular figures, everything reconciles. Mood: precise, unshowy, trustworthy \u2014 a firm that has been on the same street since 1996. Sector: Finance."
+  },
+  {
+    "name": "Counsel (studio style)",
+    "nativeId": "counsel",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Solicitor",
+      "Barrister",
+      "Conveyancer",
+      "Migration agent",
+      "Estate planner",
+      "Mediator"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/counsel",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/counsel",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#F6F3EC",
+      "surface": "#EDE8DC",
+      "ink": "#1B1B18",
+      "accent": "#A8823C",
+      "accent2": null,
+      "extra": [
+        "#123527",
+        "#D6CFBE"
+      ]
+    },
+    "fonts": {
+      "display": "Spectral",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "serif",
+      "formal",
+      "elegant",
+      "legal",
+      "premium",
+      "traditional"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "hairline double rule with a \u00a7 pivot, brass crest, and serif drop caps opening each body block",
+    "description": "Bottle-green and brass law practice \u2014 crest, drop caps, double rules, quiet authority. Mood: formal, restrained, old-money \u2014 a firm that does not need to raise its voice. Sector: Legal."
+  },
+  {
+    "name": "Meridian (studio style)",
+    "nativeId": "meridian",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Financial adviser",
+      "Wealth manager",
+      "Mortgage broker",
+      "Insurance broker",
+      "Private client accountant",
+      "Stockbroker"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/meridian",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/meridian",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0A1220",
+      "surface": "#101B2D",
+      "ink": "#E9EEF6",
+      "accent": "#C7A464",
+      "accent2": null,
+      "extra": [
+        "#0E1727",
+        "#1E2B40"
+      ]
+    },
+    "fonts": {
+      "display": "Fraunces",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "luxury",
+      "premium",
+      "gold",
+      "navy",
+      "elegant",
+      "finance"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "concentric meridian arcs rising to a hairline horizon, plus a four-cell tabular stat band",
+    "description": "Midnight-navy wealth practice \u2014 gold horizon arcs, tabular stat band, hushed confidence. Mood: discreet, premium, lower-north-shore \u2014 money that does not need to shout. Sector: Finance."
+  },
+  {
+    "name": "Blueprint (studio style)",
+    "nativeId": "blueprint",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Architect",
+      "Building designer",
+      "Draftsperson",
+      "Town planner",
+      "Interior architect",
+      "Heritage consultant"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/blueprint",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/blueprint",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#F3F5F3",
+      "surface": null,
+      "ink": "#0F1418",
+      "accent": "#12557E",
+      "accent2": "#B4472F",
+      "extra": [
+        "#D6DEE2",
+        "#C2CCD2"
+      ]
+    },
+    "fonts": {
+      "display": "Archivo",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "technical",
+      "geometric",
+      "grid",
+      "blueprint",
+      "precise"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "fixed 24/120px engineering grid over the whole page plus red dimension lines with end ticks",
+    "description": "Drafting-table architecture studio \u2014 live engineering grid, dimension callouts, spec-table services. Mood: technical, precise, inner-west \u2014 the drawing is the product. Sector: Built environment."
+  },
+  {
+    "name": "Halcyon (studio style)",
+    "nativeId": "halcyon",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Physiotherapist",
+      "Chiropractor",
+      "Osteopath",
+      "Podiatrist",
+      "Dietitian",
+      "Psychologist",
+      "Speech pathologist",
+      "Dentist"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/halcyon",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/halcyon",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FBF9F5",
+      "surface": "#F2F0EA",
+      "ink": "#1F2A28",
+      "accent": "#14554F",
+      "accent2": "#E2725B",
+      "extra": [
+        "#E2EAE1"
+      ]
+    },
+    "fonts": {
+      "display": "Outfit",
+      "body": "Nunito Sans",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "soft",
+      "rounded",
+      "friendly",
+      "health",
+      "calm",
+      "warm"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "fully-rounded capsule slots and cards plus a dotted range-of-motion arc",
+    "description": "Sage-and-teal allied-health clinic \u2014 capsule geometry, live booking panel, unhurried tone. Mood: calm, capable, community clinic \u2014 care without the clipboard. Sector: Health."
+  },
+  {
+    "name": "Atelier (studio style)",
+    "nativeId": "atelier",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Brand agency",
+      "Design studio",
+      "Marketing agency",
+      "Photographer",
+      "Videographer",
+      "Web studio",
+      "Copywriter"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/atelier",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/atelier",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0C0C0D",
+      "surface": "#161618",
+      "ink": "#F2F0EA",
+      "accent": "#D6FF3F",
+      "accent2": null,
+      "extra": [
+        "#26262A"
+      ]
+    },
+    "fonts": {
+      "display": "Syne",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "bold",
+      "vivid",
+      "high-contrast",
+      "creative",
+      "brutalist",
+      "neon"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "full-width acid marquee ticker plus display type set at 9.5rem with -.055em tracking",
+    "description": "Near-black studio with an acid-lime charge \u2014 oversized uppercase display and a running marquee. Mood: confident, contemporary, creative-industry \u2014 sells on taste alone. Sector: Creative."
+  },
+  {
+    "name": "Datum (studio style)",
+    "nativeId": "datum",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Structural engineer",
+      "Civil engineer",
+      "Building certifier",
+      "Surveyor",
+      "Geotechnical consultant",
+      "Building inspector"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/datum",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/datum",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#12161A",
+      "surface": "#181D23",
+      "ink": "#E4E9ED",
+      "accent": "#F2A03D",
+      "accent2": null,
+      "extra": [
+        "#242B33"
+      ]
+    },
+    "fonts": {
+      "display": "IBM Plex Sans",
+      "body": "IBM Plex Mono",
+      "mono": null
+    },
+    "mode": "dark",
+    "tags": [
+      "dark",
+      "technical",
+      "industrial",
+      "mono",
+      "amber",
+      "precise"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "isometric wireframe structure behind the hero and a monospaced spec-table service list keyed to AS standards",
+    "description": "Slate-and-amber engineering consultancy \u2014 isometric hairline structure, monospaced spec tables. Mood: technical, accountable, no marketing gloss \u2014 the numbers are the pitch. Sector: Built environment."
+  },
+  {
+    "name": "Sigil (studio style)",
+    "nativeId": "sigil",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Notary public",
+      "Migration agent",
+      "Justice of the peace",
+      "Translator",
+      "Conveyancer",
+      "Patent attorney"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/sigil",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/sigil",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FFFFFF",
+      "surface": "#F7F4F0",
+      "ink": "#1C1A18",
+      "accent": "#B08B3F",
+      "accent2": null,
+      "extra": [
+        "#6B1F2A",
+        "#DCD5CA"
+      ]
+    },
+    "fonts": {
+      "display": "EB Garamond",
+      "body": "Inter",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "vintage",
+      "ornate",
+      "elegant",
+      "formal",
+      "legal",
+      "multilingual"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "mathematically drawn guilloch\u00e9 rosette (12 ellipses rotated 15\u00b0 apart) plus a fixed engraved double page border",
+    "description": "Maroon-and-gold notarial office \u2014 guilloch\u00e9 seal, engraved page border, multilingual. Mood: official, multilingual, community-rooted \u2014 a document office people trust with originals. Sector: Legal."
+  },
+  {
+    "name": "Terrace (studio style)",
+    "nativeId": "terrace",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Buyers agent",
+      "Property adviser",
+      "Real estate agency",
+      "Valuer",
+      "Property manager",
+      "Strata manager"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/terrace",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/terrace",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FAF7F1",
+      "surface": "#F5EFE5",
+      "ink": "#241C18",
+      "accent": "#B75E3E",
+      "accent2": null,
+      "extra": [
+        "#EFE4D5",
+        "#DCCDB9"
+      ]
+    },
+    "fonts": {
+      "display": "DM Serif Display",
+      "body": "DM Sans",
+      "mono": "IBM Plex Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "warm",
+      "organic",
+      "arched",
+      "terracotta",
+      "property",
+      "australian"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "arched terrace-window panels (999px top radius) and an 44\u00d711px brick module strip",
+    "description": "Terracotta-and-sand property advisory \u2014 arched terrace windows, brick module rhythm. Mood: warm, established, eastern-suburbs \u2014 advice from someone who knows the street. Sector: Property."
+  },
+  {
+    "name": "Contour (studio style)",
+    "nativeId": "contour",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Land surveyor",
+      "Town planner",
+      "Civil contractor consultant",
+      "Environmental consultant",
+      "Arborist",
+      "Geospatial consultant"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/contour",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/contour",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#F2F4EF",
+      "surface": "#E9EDE4",
+      "ink": "#15201A",
+      "accent": "#1D3326",
+      "accent2": "#C6D62E",
+      "extra": [
+        "#CBD5C4"
+      ]
+    },
+    "fonts": {
+      "display": "Barlow Semi Condensed",
+      "body": "Inter",
+      "mono": "Roboto Mono"
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "technical",
+      "field-ready",
+      "lime",
+      "topographic",
+      "precise"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "eight-band topographic contour field behind the hero plus an MGA2020 coordinate readout strip",
+    "description": "Forest-and-hi-vis surveying practice \u2014 topographic contour field and a live coordinate readout. Mood: field-ready, exact, western Sydney \u2014 boots on site by 6:30am. Sector: Built environment."
+  },
+  {
+    "name": "Quorum (studio style)",
+    "nativeId": "quorum",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Management consultant",
+      "Strategy adviser",
+      "Corporate advisory",
+      "Executive coach",
+      "HR consultant",
+      "Recruitment firm"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/quorum",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/quorum",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FFFFFF",
+      "surface": "#FAFAFA",
+      "ink": "#0A0A0A",
+      "accent": "#E8112D",
+      "accent2": null,
+      "extra": [
+        "#E4E4E4",
+        "#6E6E73"
+      ]
+    },
+    "fonts": {
+      "display": "Inter",
+      "body": "Roboto Mono",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "minimal",
+      "swiss",
+      "geometric",
+      "high-contrast",
+      "austere"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). STUDIO-ONLY \u2014 deliberately not registered in the pipeline (blueprint, datum, terrace, sigil, quorum, counsel).",
+    "signature": "a visible numbered 12-column grid ruler that every section aligns to, with a single red accent",
+    "description": "Swiss-grid consultancy \u2014 white, black, one red mark, and an exposed 12-column ruler. Mood: austere, senior, boardroom \u2014 confidence expressed as restraint. Sector: Advisory."
+  },
+  {
+    "name": "Solace (studio style)",
+    "nativeId": "solace",
+    "project": "x10.au (biz)",
+    "prefix": "XB",
+    "category": "website",
+    "useCases": [
+      "Psychologist",
+      "Counsellor",
+      "Psychotherapist",
+      "Psychiatrist",
+      "Social worker",
+      "Naturopath",
+      "Wellness clinic"
+    ],
+    "source": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/solace",
+    "mount": {
+      "dir": "/home/fivelidz/projects/trade.sydney/brand_x10_au/design_studio/styles/solace",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#FBF9F8",
+      "surface": "#F4F1EF",
+      "ink": "#2A2429",
+      "accent": "#3E2C43",
+      "accent2": "#C9B8D6",
+      "extra": [
+        "#E7E1E4"
+      ]
+    },
+    "fonts": {
+      "display": "Lora",
+      "body": "Karla",
+      "mono": null
+    },
+    "mode": "light",
+    "tags": [
+      "light",
+      "soft",
+      "calm",
+      "health",
+      "plum",
+      "lavender",
+      "animated"
+    ],
+    "status": "candidate",
+    "lineage": "x10 design studio (brand_x10_au/design_studio, review build 2026-08-12 \u2014 nothing deployed). One of the SIX KEEPERS folded into the tradez pipeline via client_sites/templates/x10_adapter.py.",
+    "signature": "an 11-second breathing radial halo behind the hero, soft radii everywhere, no hard edges",
+    "description": "Plum-and-lavender psychology practice \u2014 a slowly breathing halo and 1.9 line-height calm. Mood: calm, unhurried, safe \u2014 the visual equivalent of a lowered voice. Sector: Health."
+  }
+]

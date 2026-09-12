@@ -1,0 +1,66 @@
+{
+  "generated": "2026-09-12T17:59:00",
+  "methodology": {
+    "catalog_entries": 448,
+    "mount_sample": "30 random mounted entries, seed 42, all 18 prefixes represented",
+    "palette_sample": "15 entries across 9 prefixes; every palette hex rg-searched (timeout 30) in source file/dir, then sibling css/html/js/json under mount.dir; '#' literal preferred, bare-hex word-boundary fallback",
+    "broken_scan": "full 448-entry scan (os.path checks), not sampled",
+    "http": "curl --max-time 10, 5 endpoints",
+    "scripts": ["qa_agent_checks.py", "qa_agent_palette_http.py"]
+  },
+  "mount_failures": [],
+  "mount_sample_ok": "30/30 mounted paths resolve to existing files",
+  "palette_suspect": [],
+  "palette_detail": {
+    "ok": ["MI-011", "TP-026", "QA-042", "TZ-003", "TP-023", "CR-003", "ED-023", "CR-012", "ED-021", "GM-031", "ED-019", "GM-039", "MI-007"],
+    "partial": [
+      {"code": "RW-030", "found": "6/8", "missing": ["#121418", "#31353e"], "note": "2 dark greys not located in source; likely derived shades, palette not invented"},
+      {"code": "XB-028", "found": "1/9 at stated source (X10_SITE_STYLES.md)", "note": "all hexes verified present in sibling project files (tradez_x10_biz/ROADMAP.md, public/pay-demo.html) - source pointer incomplete, palette genuine"}
+    ],
+    "invented_count": 0
+  },
+  "miscategorized": [],
+  "miscategorized_reviewed_and_cleared": [
+    {"code": "GM-007", "note": "website incl. logo page - category website correct"},
+    {"code": "GT-007..GT-010", "note": "gmux Dashboard themes as theme-kit - correct (css kits)"},
+    {"code": "HL-C01/HL-C02", "note": "hero modules mentioning card/logo - correct"},
+    {"code": "RW-010 Card Table", "note": "reps workout kit - correct"},
+    {"code": "SA-014 Triage Card", "note": "single-page web tool per useCases - correct"},
+    {"code": "TZ-022 Bottom Sheet", "note": "banner variation -> hero-module - correct"}
+  ],
+  "coverage": {
+    "TZ": {"label": "tradez 17 styles", "expected_core": 17, "in_catalog": 36, "status": "complete + 19 extras (6 hero-module, 10 theme-kit, 3 website); TZ-001..017 are the 17 core styles; no gaps"},
+    "TX": {"label": "x10 studio 12", "expected_core": 12, "in_catalog": 24, "status": "complete + 12 extras (6 logo, 5 directory, 1 font-system); TX-001..012 core; no gaps"},
+    "GM": {"label": "gmux v1-v16", "expected_core": 16, "in_catalog": 49, "versions_found": "v1-v16 all present", "status": "complete; no numbering gaps (1-49)"},
+    "ED": {"label": "endispute 13-direction gallery", "expected_core": 13, "in_catalog": 28, "status": "complete + 15 extras (10 website, 1 poster, 4 business-card); no gaps"},
+    "RW": {"label": "reps 26 kits", "expected_core": 26, "in_catalog": 31, "status": "complete + 5 extras; no gaps"},
+    "TP": {"label": "airtree tp07 family", "in_catalog": 36, "tp07_present": true, "status": "complete; no gaps (1-36)"},
+    "HL": {"label": "hero-lab 43", "expected_core": 43, "in_catalog": 45, "status": "complete: 43 modules as HL-C01..C09, E01..E15, H01..H09, S01..S10 + 2 numeric entries HL-001/002; NOTE: letter-suffixed codes, not HL-003..045"},
+    "QA": {"label": "qalarc demos", "expected_core": 59, "in_catalog": 59, "status": "exact match; no gaps (1-59)"},
+    "CR": {"label": "crypto themegallery", "in_catalog": 26, "status": "present, no gaps (1-26); no expected count given to compare"},
+    "GO": {"label": "goetica 6 themes", "expected_core": 6, "in_catalog": 7, "status": "complete: GO-002..007 are the 6 phone themes (Ember/Paper/Midnight/Terminal/Rose/Ocean) + GO-001 site entry"},
+    "absent_items": [],
+    "numbering_gaps": "none in any prefix (all sequences continuous)"
+  },
+  "broken": {
+    "truly_nonexistent_source_paths": {"count": 0},
+    "source_points_to_directory_not_file": {"count": 118, "percent": 26.3, "by_prefix": {"ED": 19, "GM": 16, "PH": 12, "SA": 12, "GL": 10, "XB": 10, "GS": 8, "CR": 7, "MI": 7, "QA": 5, "RW": 5, "TR": 3, "TZ": 3, "GO": 1}, "note": "all 118 dirs exist on disk; appears to be schema convention for collection-level entries (e.g. ui-codex/, wallet-app/ui/)"},
+    "era_null": {"count": 118, "note": "1:1 overlap with directory-source entries - systematic, not random data loss"},
+    "source_null": {"count": 0},
+    "empty_name": {"count": 0},
+    "empty_description_or_lineage": {"count": 0},
+    "no_palette": {"count": 87, "percent": 19.4, "examples": ["CR-022", "GM-001", "GM-002", "GM-003"]},
+    "mount_dir_missing_on_disk": {"count": 0},
+    "unmounted_entries": {"count": 225, "percent": 50.4, "note": "mount field absent/empty; source still resolves - observation, not failure"}
+  },
+  "http_checks": {
+    "http://localhost:1340/api/catalog": 200,
+    "http://localhost:1340/": 200,
+    "http://localhost:1340/projects": 200,
+    "http://localhost:1340/CR-001/": 200,
+    "http://localhost:1340/swatch/CR-001/": 200,
+    "result": "5/5 PASS (verified twice: ~17:55 and 17:58:49)",
+    "incident": "one transient outage window ~17:58 (all endpoints 000, no listener on :1340); hub recovered within ~60s; likely a restart, concurrent probe processes observed"
+  },
+  "summary": "QA PASS (healthy). Catalog 448 entries. MOUNTS: 30/30 sampled (seed 42, all 18 prefixes) resolve to real files; 0 failures. PALETTE TRUTH: 15 sampled, 0 invented - 13 fully verified hex-for-hex, 2 partial (RW-030 missing 2 derived-looking greys; XB-028 verified in sibling files, catalog source pointer slightly stale). CATEGORIES: no miscategorizations found in sample or heuristic scan; 6 borderline names reviewed and all defensible. COVERAGE: no gaps - every known farm is present and continuous (QA 59/59 exact; GM v1-v16 all found; HL 43 modules as letter-suffixed C/E/H/S codes + 2 numeric; TZ 17, TX 12, ED 13, RW 26 cores all present, catalog is a superset with extras; TP tp07 present; GO 6 themes + 1 site). BROKEN: zero truly nonexistent source paths and zero empty names/descriptions; caveats: 118 sources (26%) point to existing directories not files with era:null on exactly those (schema convention worth documenting), 87 entries (19.4%) have no palette, 225 (50.4%) are unmounted. HTTP: 5/5 endpoints 200 on localhost:1340, with one ~60s transient outage observed mid-check that self-recovered. Recommended fixes, none urgent: (1) document the dir-source/era-null convention or backfill era; (2) backfill palettes for 87 entries; (3) mount the 225 unmounted entries for hub browsing; (4) fix XB-028 source pointer to include ROADMAP.md/pay-demo.html; (5) investigate the hub's brief restart."
+}

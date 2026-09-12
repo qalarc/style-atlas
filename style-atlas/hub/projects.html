@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI Frontend Collection — Style Atlas</title>
+<style>
+:root {
+  --bg:#0C0F12; --surface:#14181D; --surface2:#1B2027; --raise:#212831;
+  --line:#262C34; --line2:#333B46; --ink:#E9EDF1; --muted:#8B95A0; --faint:#5C6672;
+  --accent:#7FB069; --gold:#C9A24E; --blue:#6AA6D9;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+a{color:var(--accent)}
+/* hero */
+.hero{padding:90px 0 60px;border-bottom:1px solid var(--line);
+  background:radial-gradient(1200px 500px at 20% -10%, #16221a55, transparent),
+             radial-gradient(900px 400px at 90% 0%, #2a241355, transparent)}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--accent);
+  text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-1px;margin-bottom:20px;max-width:20ch}
+h1 em{color:var(--gold);font-style:normal}
+.lead{color:var(--muted);font-size:18px;max-width:62ch;margin-bottom:30px}
+.ctarow{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:12px;font-weight:800;
+  font-size:15px;text-decoration:none;border:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:#0B0E0B}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line2);color:var(--ink)}
+.btn.ghost:hover{border-color:var(--accent)}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:50px 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.stat b{display:block;font-size:34px;color:var(--accent);font-weight:800}
+.stat.dark b{color:var(--gold)} .stat.mid b{color:var(--blue)}
+.stat span{color:var(--muted);font-size:12.5px;letter-spacing:.5px}
+/* sections */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin-bottom:8px;letter-spacing:-.3px}
+.sub{color:var(--muted);margin-bottom:26px;max-width:70ch}
+.collgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.collcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  padding:16px;transition:transform .12s,border-color .12s;cursor:pointer;text-decoration:none;color:var(--ink);display:block}
+.collcard:hover{transform:translateY(-2px);border-color:var(--accent)}
+.collcard .pal{display:flex;height:26px;border-radius:7px;overflow:hidden;margin-bottom:12px;border:1px solid var(--line)}
+.collcard .pal div{flex:1}
+.collcard h3{font-size:15px;margin-bottom:2px}
+.collcard p{font-size:12px;color:var(--muted)}
+.collcard .pre{font-family:var(--mono);font-size:10px;color:var(--gold);float:right}
+/* cat bars */
+.catrow{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.catrow .lbl{width:130px;font-size:13.5px;color:var(--ink);text-align:right;flex:none}
+.catrow .bar{height:22px;background:var(--accent);border-radius:5px;min-width:3px;opacity:.85}
+.catrow .n{font-family:var(--mono);font-size:11px;color:var(--faint)}
+/* how */
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.howcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.howcard .num{font-family:var(--mono);color:var(--gold);font-size:12px;margin-bottom:8px}
+.howcard h3{font-size:15.5px;margin-bottom:6px}
+.howcard p{font-size:13px;color:var(--muted)}
+kbd{font-family:var(--mono);font-size:11px;background:var(--raise);border:1px solid var(--line2);
+  border-bottom-width:2px;border-radius:5px;padding:2px 7px;color:var(--muted)}
+.keys{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.keyrow{font-size:13px;color:var(--muted)}
+footer{padding:40px 0 60px;color:var(--faint);font-size:13px;font-family:var(--mono)}
+.code{font-family:var(--mono);color:var(--gold)}
+@media(max-width:700px){.catrow .lbl{width:90px;font-size:12px}}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="wrap">
+  <div class="kicker">UI Frontend Collection</div>
+  <h1>Every style we ever built, <em>cataloged forever.</em></h1>
+  <p class="lead">The Style Atlas indexes every website theme, phone-app design, chat
+  system, game UI, dashboard, logo and theme kit across all qalarc projects —
+  endispute, tradez.au, x10.au, gmux, crypto, reps with friends, phone games and more.
+  Each one has a code, a palette, live previews and full keyboard browsing.</p>
+  <div class="ctarow">
+    <a class="btn primary" href="/">Open the Atlas →</a>
+    <a class="btn ghost" href="/#TZ-011" id="randomLink">Random style</a>
+  </div>
+  <div class="stats" id="stats"></div>
+</div></div>
+
+<section id="favsSection" style="display:none"><div class="wrap">
+  <h2>Community favorites</h2>
+  <p class="sub">Highest-rated styles across all visitors — click to view in the Atlas.</p>
+  <div class="collgrid" id="favs"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Collections</h2>
+  <p class="sub">Every source project is a collection. Click any to browse its styles
+  in the Atlas.</p>
+  <div class="collgrid" id="colls"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What's inside</h2>
+  <p class="sub">Entries by category across the whole library.</p>
+  <div id="cats"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How to use it</h2>
+  <div class="how">
+    <div class="howcard"><div class="num">01</div><h3>Browse &amp; cycle</h3>
+      <p>Open any style and flip through the entire filtered set with the
+      <kbd>←</kbd> <kbd>→</kbd> arrow keys. Every card shows the real palette,
+      typography and tags.</p></div>
+    <div class="howcard"><div class="num">02</div><h3>Filter anything</h3>
+      <p>Sidebar filters for category, project, dark/light, hue family, tags and
+      status (candidate / final / rejected / shipped). Or search with <kbd>/</kbd>.</p></div>
+    <div class="howcard"><div class="num">03</div><h3>Ask the Concierge</h3>
+      <p>The ✦ chatbot runs on a local model and knows the whole catalog —
+      “dark + gold for a law firm” narrows the gallery live.</p></div>
+    <div class="howcard"><div class="num">04</div><h3>Star your picks</h3>
+      <p>Press <kbd>S</kbd> to shortlist. Picks persist with notes — the shortlist
+      for any new project.</p></div>
+    <div class="howcard"><div class="num">05</div><h3>Reference by code</h3>
+      <p>Every style has a stable code like <span class="code">TZ-007</span> or
+      <span class="code">HL-E11</span> — cite it in any conversation, agent task
+      or ticket and it means exactly one style.</p></div>
+    <div class="howcard"><div class="num">06</div><h3>Grow it forever</h3>
+      <p>New project? Drop a findings JSON (schema in <span class="code">AGENTS.md</span>)
+      and run <span class="code">scripts/update_catalog.py</span> — the Atlas
+      absorbs it idempotently.</p></div>
+  </div>
+  <div class="keys">
+    <span class="keyrow"><kbd>←</kbd><kbd>→</kbd> cycle</span>
+    <span class="keyrow"><kbd>↑</kbd><kbd>↓</kbd> move</span>
+    <span class="keyrow"><kbd>Enter</kbd> open</span>
+    <span class="keyrow"><kbd>S</kbd> star</span>
+    <span class="keyrow"><kbd>C</kbd> chat</span>
+    <span class="keyrow"><kbd>R</kbd> random</span>
+    <span class="keyrow"><kbd>/</kbd> search</span>
+    <span class="keyrow"><kbd>?</kbd> all keys</span>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  STYLE ATLAS · qalarc UI frontend collection · catalog/atlas.json is the source of truth ·
+  add styles via scripts/update_catalog.py
+</div></footer>
+
+<script>
+fetch("/api/catalog").then(r => r.json()).then(cat => {
+  const e = cat.entries || [];
+  window.catEntries = e;
+  const projects = new Set(e.map(x => x.project));
+  const dark = e.filter(x => x.mode === "dark").length;
+  const live = e.filter(x => x.mount && x.mount.dir).length;
+  document.getElementById("stats").innerHTML = `
+    <div class="stat"><b>${e.length}</b><span>styles cataloged</span></div>
+    <div class="stat dark"><b>${projects.size}</b><span>project collections</span></div>
+    <div class="stat mid"><b>${dark}</b><span>dark modes</span></div>
+    <div class="stat"><b>${live}</b><span>live-previewable</span></div>`;
+
+  /* collections */
+  const byProj = {};
+  e.forEach(x => (byProj[x.project] = byProj[x.project] || []).push(x));
+  const projs = Object.entries(byProj).sort((a,b) => b[1].length - a[1].length);
+  document.getElementById("colls").innerHTML = projs.map(([p, list]) => {
+    const pal = [];
+    list.forEach(x => (x.palette ? [x.palette.accent, x.palette.bg] : []).forEach(c => {
+      if (c && pal.length < 5 && !pal.includes(c)) pal.push(c);
+    }));
+    return `<a class="collcard" href="/#proj-${encodeURIComponent(p)}" data-proj="${p.replace(/"/g,'&quot;')}">
+      <span class="pre">${[...new Set(list.map(x=>x.prefix))].slice(0,3).join("·")}</span>
+      <div class="pal">${pal.map(c=>`<div style="background:${c}"></div>`).join("")}</div>
+      <h3>${p}</h3><p>${list.length} styles · ${[...new Set(list.map(x=>x.category))].length} categories</p></a>`;
+  }).join("");
+  /* deep-link to filtered project in the hub */
+  document.querySelectorAll(".collcard").forEach(el => {
+    el.href = "/";
+    el.addEventListener("click", ev => {
+      ev.preventDefault();
+      sessionStorage.setItem("atlas.project", el.dataset.proj);
+      location.href = "/";
+    });
+  });
+
+  /* category bars */
+  const cats = {};
+  e.forEach(x => cats[x.category] = (cats[x.category]||0)+1);
+  const arr = Object.entries(cats).sort((a,b)=>b[1]-a[1]);
+  const max = arr[0][1];
+  const hues = ["#7FB069","#6AA6D9","#C9A24E","#D97AB8","#6ABFAE","#A77FD9","#D98E5A","#D96A6A","#6AC3D9","#8B95A0"];
+  document.getElementById("cats").innerHTML = arr.map(([c,n],i) =>
+    `<div class="catrow"><div class="lbl">${c}</div>
+     <div class="bar" style="width:${Math.round(n/max*560)}px;background:${hues[i%hues.length]}"></div>
+     <span class="n">${n}</span></div>`).join("");
+
+  /* community favorites */
+  fetch("/api/ratings").then(r=>r.json()).then(d=>{
+    const R=d.ratings||{};
+    const scored=e=>{const r=R[e.code];return r&&r.c?{e,avg:r.s/r.c,n:r.c}:null};
+    const top=(window.catEntries||[])
+      .map(scored).filter(Boolean).sort((a,b)=>b.avg-a.avg||b.n-a.n).slice(0,6);
+    if(!top.length) return;
+    document.getElementById("favsSection").style.display="block";
+    document.getElementById("favs").innerHTML=top.map(({e,avg,n})=>`
+      <a class="collcard" href="/#${e.code}">
+        <span class="pre">${e.code}</span>
+        <div class="pal">${(e.palette?[e.palette.accent,e.palette.bg,e.palette.accent2]:[]).filter(Boolean).map(c=>`<div style="background:${c}"></div>`).join("")}</div>
+        <h3>${"★".repeat(Math.round(avg))}<span style="color:var(--line2)">${"★".repeat(5-Math.round(avg))}</span> ${avg.toFixed(1)}</h3>
+        <p>${e.name} · ${n} vote${n>1?"s":""}</p></a>`).join("");
+  }).catch(()=>{});
+
+  /* random link */
+  if (e.length) {
+    const rnd = e[Math.floor(Math.random()*e.length)];
+    document.getElementById("randomLink").href = "/#" + rnd.code;
+  }
+});
+/* hub side: honor ?project= deep link */
+if (sessionStorage.getItem("atlas.project")) { /* consumed by app.js on / */ }
+</script>
+</body>
+</html>

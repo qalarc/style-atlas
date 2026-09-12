@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STYLE ATLAS — every UI style ever built</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230C0F12'/><circle cx='32' cy='50' r='13' fill='%237FB069'/><circle cx='55' cy='50' r='13' fill='%23C9A24E'/><circle cx='72' cy='50' r='13' fill='%236AA6D9'/></svg>">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand"><b>STYLE<em>ATLAS</em></b><span id="brandSub">loading…</span></div>
+    <nav class="tabs">
+      <button data-view="gallery" class="on">Gallery</button>
+      <button data-view="collections">Collections</button>
+      <button data-view="picks">Picks <span id="pickCount" style="color:var(--gold)"></span></button>
+    </nav>
+    <div id="searchWrap">
+      <input id="search" type="text" placeholder="Search name, code, tag, description…">
+      <span id="searchKbd">/</span>
+    </div>
+    <div class="sortwrap">Sort <select id="sort">
+      <option value="code">code</option>
+      <option value="project">project</option>
+      <option value="category">category</option>
+      <option value="name">name</option>
+      <option value="hue">hue</option>
+      <option value="mode">mode</option>
+      <option value="era">newest</option>
+      <option value="rating">top rated</option>
+    </select></div>
+    <div id="count"><b>0</b> styles</div>
+  </header>
+
+  <div id="main">
+    <aside id="sidebar">
+      <div class="fgroup" id="fgCategory"><h4>Category</h4></div>
+      <div class="fgroup" id="fgProject"><h4>Project</h4></div>
+      <div class="fgroup" id="fgMode"><h4>Mode</h4></div>
+      <div class="fgroup" id="fgHue"><h4>Hue family</h4></div>
+      <div class="fgroup" id="fgStatus"><h4>Status</h4></div>
+      <div class="fgroup"><h4>Tags</h4><div id="tagCloud"></div></div>
+      <button id="clearAll">Clear all filters</button>
+    </aside>
+
+    <div id="content">
+      <div id="grid"></div>
+      <div id="collections" style="display:none"></div>
+      <div id="picksWrap" style="display:none"></div>
+    </div>
+  </div>
+</div>
+
+<!-- theater -->
+<div id="theater">
+  <div id="tMain">
+    <div id="tFrameWrap">
+      <iframe id="tFrame" title="style preview"></iframe>
+      <div id="tExt"><p>External site — iframes may be blocked.</p><a id="tExtLink" target="_blank" rel="noopener">Open in new tab ↗</a></div>
+    </div>
+    <div id="tPanel"></div>
+  </div>
+  <div id="tBar">
+    <button class="navbtn" id="tPrev" title="Previous (←)">←</button>
+    <button class="navbtn" id="tNext" title="Next (→)">→</button>
+    <div id="tIdx"></div>
+    <button class="navbtn" id="tRandom" title="Random (R)">⟳</button>
+    <div class="hint"><kbd>←</kbd> <kbd>→</kbd> cycle &nbsp; <kbd>S</kbd> star &nbsp; <kbd>Esc</kbd> close</div>
+  </div>
+</div>
+
+<!-- chat -->
+<button id="chatFab" title="Atlas Concierge (C)">✦</button>
+<div id="chat">
+  <header><span class="dot"></span><b>Atlas Concierge</b><span id="chatModel" style="font-size:10px;color:var(--faint);font-family:var(--mono)"></span><button id="chatClose">✕</button></header>
+  <div id="chatlog"></div>
+  <div id="chips"></div>
+  <div id="chatin">
+    <input id="chatInput" type="text" placeholder="e.g. dark themes with gold accents">
+    <button id="chatSend">➤</button>
+  </div>
+</div>
+
+<!-- help -->
+<div id="help">
+  <div class="box">
+    <h3>Keyboard</h3>
+    <div class="row"><span>Cycle styles (theater)</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
+    <div class="row"><span>Move in gallery</span><span><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd></span></div>
+    <div class="row"><span>Open theater</span><span><kbd>Enter</kbd></span></div>
+    <div class="row"><span>Close theater / this</span><span><kbd>Esc</kbd></span></div>
+    <div class="row"><span>Search</span><span><kbd>/</kbd></span></div>
+    <div class="row"><span>Star / pick style</span><span><kbd>S</kbd></span></div>
+    <div class="row"><span>Toggle chat</span><span><kbd>C</kbd></span></div>
+    <div class="row"><span>Random style</span><span><kbd>R</kbd></span></div>
+    <div class="row"><span>Views</span><span><kbd>G</kbd> gallery · <kbd>V</kbd> collections · <kbd>P</kbd> picks</span></div>
+    <div class="row"><span>Help</span><span><kbd>?</kbd></span></div>
+    <div style="margin-top:14px"><button class="tbtn primary" style="width:100%" onclick="document.getElementById('help').classList.remove('open')">Got it</button></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+<script src="/app.js"></script>
+<script src="/chatbot.js"></script>
+</body>
+</html>

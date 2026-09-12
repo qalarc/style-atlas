@@ -1,0 +1,8 @@
+.opencode/
+__pycache__/
+*.pyc
+node_modules/
+.wrangler/
+dist/
+style-atlas/catalog/archive/
+style-atlas/thumbs_archive/
