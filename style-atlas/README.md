@@ -4,7 +4,7 @@ Every UI style, theme and design variant ever built across the qalarc project
 family — cataloged, coded, previewable, filterable, and browsable with arrow keys.
 
 ## LIVE HOSTED
-**https://style-atlas.fivelidz.workers.dev** — full gallery, chatbot (Z.AI GLM
+**https://atlas.qalarc.com** — full gallery, chatbot (Z.AI GLM
 flash), and public star ratings (Cloudflare KV). Deploy updates:
 `cd dist && npx wrangler deploy` (build first with `python3 scripts/build_static.py`).
 

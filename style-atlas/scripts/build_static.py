@@ -181,6 +181,7 @@ def main():
             "name = \"style-atlas\"\n"
             "compatibility_date = \"2026-09-01\"\n"
             "main = \"chat-worker.js\"\n\n"
+            "routes = [\n  { pattern = \"atlas.qalarc.com\", custom_domain = true },\n]\n\n"
             "[assets]\n"
             "directory = \"./\"\n"
             "run_worker_first = [\"/api/*\"]\n\n"
