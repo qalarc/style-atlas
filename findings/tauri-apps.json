@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Claude Pulse — Tauri Desktop",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["API usage monitor", "developer telemetry dashboard", "desktop gauge widgets"],
+    "source": "/home/fivelidz/projects/claude-pulse/app/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/claude-pulse/app/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0d0f14",
+      "surface": "#161a23",
+      "ink": "#e6e9ef",
+      "accent": "#d97757",
+      "accent2": "#5b9bd5",
+      "extra": ["#151820", "#7a8294", "#232733", "#c08fe0", "#4caf82", "#f5c451", "#e0564a"]
+    },
+    "fonts": { "body": "system-ui (browser default)" },
+    "mode": "dark",
+    "tags": ["dark", "minimal", "techy", "monitor", "gauge", "clay-accent"],
+    "status": "candidate",
+    "lineage": "Desktop Tauri app source; qalarc.json QA entry 'Claude Pulse — Live' is the standalone web demo of the same tool",
+    "signature": "Canvas rate-limit gauge with needle/peak/limit markers + Anthropic clay (#d97757) accent on near-black",
+    "description": "Vanilla-JS desktop monitor for Claude API usage: big canvas gauge, stat tiles, tabbed views. Near-black blue-tinted surfaces with warm Anthropic-clay accent and semantic in/out/peak/429 colors."
+  },
+  {
+    "name": "Archon — Knowledge Console",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["research workbench", "knowledge management UI", "agent sandbox console"],
+    "source": "/home/fivelidz/projects/Knowledge_systems/app/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/Knowledge_systems/app/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#080C14",
+      "surface": "#0F1523",
+      "ink": "#F5F5F5",
+      "accent": "#6366F1",
+      "accent2": "#818CF8",
+      "extra": ["#162035", "#1E2D45", "#9CA3AF", "#22C55E", "#F59E0B", "#EF4444"]
+    },
+    "fonts": { "body": "Inter", "mono": "JetBrains Mono" },
+    "mode": "dark",
+    "tags": ["dark", "techy", "indigo", "scholarly", "editorial", "three-pane"],
+    "status": "candidate",
+    "lineage": "Supersedes _archive_stale_dist_2026_05_19; scope.css/knowledge_panel.css map onto the same token set",
+    "signature": "48px topbar + 280px left rail + 320px right drawer + 32px activity ticker frame; indigo #6366F1 focus glow",
+    "description": "'Archon — Know more. Prove it.' Deep navy-black research workbench with indigo accent, three-pane shell (sources rail, sandbox, drawer) and a live activity ticker. Inter for UI, JetBrains Mono for data."
+  },
+  {
+    "name": "chanalyse Monitor",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["infrastructure status board", "fleet health monitor", "minimal ops dashboard"],
+    "source": "/home/fivelidz/projects/MASTER_PROJECTS/chanalyse-monitor/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/MASTER_PROJECTS/chanalyse-monitor/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0f1115",
+      "surface": "#171a21",
+      "ink": "#e6e9ef",
+      "accent": "#ff6b35",
+      "accent2": null,
+      "extra": ["#1d212b", "#2a2f3a", "#8b93a3", "#26a269", "#e5a50a", "#e5484d"]
+    },
+    "fonts": { "body": "system-ui", "mono": "ui-monospace" },
+    "mode": "dark",
+    "tags": ["dark", "minimal", "industrial", "status-pills", "compact"],
+    "status": "candidate",
+    "lineage": null,
+    "signature": "Outlined status pills (ok/warn/bad) + orange #ff6b35 hover accent; 14px base, dense single-page board",
+    "description": "Deliberately minimal dark ops board: flat panels, uppercase micro-headers, outline status pills, one warm orange accent. System fonts, no decoration — pure signal."
+  },
+  {
+    "name": "MUSE SUITE Hub",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "landing",
+    "useCases": ["product suite launcher", "audio-visual tool landing", "synthwave promo page"],
+    "source": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/suite",
+    "mount": {
+      "dir": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/suite",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0a0a14",
+      "surface": "rgba(255,255,255,0.03)",
+      "ink": "#e8e6f0",
+      "accent": "#ff9a3c",
+      "accent2": "#b16cff",
+      "extra": ["#53d7ff", "#39ff8e", "#8a87a0", "#5a5870"]
+    },
+    "fonts": { "body": "Inter", "mono": "JetBrains Mono" },
+    "mode": "dark",
+    "tags": ["dark", "synthwave", "gradient", "neon", "grid", "retro", "animated"],
+    "status": "candidate",
+    "lineage": "Launcher hub for MUSEALL v3 + CONDUCTOR (both cataloged separately); museall root index.html redirects here",
+    "signature": "48px synthwire grid (two 1px linear-gradients) over purple/cyan radial glows; ◢◣ glyph logo in #ff9a3c",
+    "description": "Single-file synthwave landing hub for the MUSE audio-visual instrument set: deep space-navy background with subtle grid lines, purple/cyan radial glows, neon orange→purple gradient accents."
+  },
+  {
+    "name": "CONDUCTOR — Gesture Instrument Console",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["media control console", "live-performance tool UI", "signal routing panel"],
+    "source": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/conductor",
+    "mount": {
+      "dir": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/conductor",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0a0a14",
+      "surface": "#0f0f1c",
+      "ink": "#e6e6f0",
+      "accent": "#ff9a3c",
+      "accent2": "#b16cff",
+      "extra": ["#3cf0ff", "#2dffa6", "#ff3b5c", "#1f1f3a", "#7a7a99"]
+    },
+    "fonts": { "body": "JetBrains Mono", "mono": "Roboto Mono" },
+    "mode": "dark",
+    "tags": ["dark", "mono", "neon", "synthwave", "techy", "dense", "glow"],
+    "status": "candidate",
+    "lineage": "Sibling instrument of MUSEALL v3 inside the MUSE suite; shared #0a0a14 base with the Suite hub",
+    "signature": "Gradient brand wordmark (orange→purple text-clip) + glowing source meters with purple→orange fill bars",
+    "description": "All-mono gesture-control console: fixed toolbar with glowing ◢◣ brand, two-column panel grid, live signal meters with gradient fills, LED pills and neon-glow buttons. 13px mono everywhere, tabular numerals."
+  },
+  {
+    "name": "Signal WhatsApp Hub — Desktop",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["message-bridge ops console", "AI/human chat triage", "single-file admin tool"],
+    "source": "/home/fivelidz/projects/signal-whatsapp-hub-public/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/signal-whatsapp-hub-public/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0d1117",
+      "surface": "#161b22",
+      "ink": "#e6edf3",
+      "accent": "#4cc2ff",
+      "accent2": "#7c5cff",
+      "extra": ["#1c232c", "#2a3340", "#8b98a5", "#3a76f0", "#25d366", "#3fb950", "#d29922", "#f85149"]
+    },
+    "fonts": { "body": "Segoe UI", "mono": "monospace" },
+    "mode": "dark",
+    "tags": ["dark", "github-dark", "techy", "chat-app", "brand-coded", "compact"],
+    "status": "candidate",
+    "lineage": "Public repo of the Qalarc Hub desktop app; single 599-line self-contained index.html",
+    "signature": "Platform-coded semantics: Signal blue #3a76f0, WhatsApp green #25d366, AI violet #7c5cff vs manual cyan #4cc2ff",
+    "description": "GitHub-dark single-file ops console for a Signal+WhatsApp bridge: message feed with AI/human color coding, brand-colored platform chips, ok/warn/bad status system."
+  },
+  {
+    "name": "SolarScope — SP-PRO Monitor (Tauri)",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["solar/battery energy dashboard", "IoT telemetry UI", "live flow visualization"],
+    "source": "/home/fivelidz/projects/solar_control/solarscope",
+    "palette": {
+      "bg": "#0e1116",
+      "surface": "#1a2029",
+      "ink": "#e6edf3",
+      "accent": "#f5a623",
+      "accent2": "#2ecc71",
+      "extra": ["#161b22", "#262d38", "#9aa4b2", "#4a90e2", "#9b59b6", "#e74c3c"]
+    },
+    "fonts": { "body": "system-ui" },
+    "mode": "dark",
+    "tags": ["dark", "energy", "color-coded", "friendly", "rounded", "monitor"],
+    "status": "candidate",
+    "lineage": "Tauri desktop version; qalarc.json QA entry 'SolarScope' is the standalone web demo. No mount: Vite project (root index.html loads /src/main.ts), not statically servable",
+    "signature": "Semantic energy colors: solar amber #f5a623, battery green #2ecc71, load blue #4a90e2, grid grey, shunt purple",
+    "description": "12px-rounded dark energy dashboard for an SP-PRO solar inverter: source-coded color system (solar/battery/load/grid/shunt) over muted GitHub-ish surfaces. TypeScript + canvas charts; Vite-built so no static mount."
+  },
+  {
+    "name": "Tradez Concierge — Ops Console",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["lead triage console", "AI reply operations", "dense data-table admin"],
+    "source": "/home/fivelidz/projects/tradez_concierge/app/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez_concierge/app/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0d1117",
+      "surface": "#161b22",
+      "ink": "#e6edf3",
+      "accent": "#4cc2ff",
+      "accent2": "#a48bff",
+      "extra": ["#C9A24E", "#E8C77A", "#5fd06e", "#1c232c", "#2a3340", "#647a95", "#3fb950", "#d29922", "#f85149"]
+    },
+    "fonts": { "body": "Segoe UI", "mono": "ui-monospace" },
+    "mode": "dark",
+    "tags": ["dark", "github-dark", "corporate", "australian", "brand-gold", "accessible", "dense"],
+    "status": "candidate",
+    "lineage": "House brand gold #C9A24E shared with tradez.au public site and the Tradez Sales Cockpit; documented WCAG AA/AAA contrast budget in-file",
+    "signature": "Tradez brand gold (#C9A24E) on GitHub-dark + two-tier line system: decorative --line vs 3.59:1 control-boundary --line-ctl; tabular-nums ticking tables",
+    "description": "Single-file ops console for Tradez lead concierge: GitHub-dark surfaces with house gold, AI(violet)/manual(cyan) attribution colors, tabular-nums dense tables, 5s-poll-safe focus/reduced-motion accessibility tokens."
+  },
+  {
+    "name": "Tradez Sales Cockpit",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["sales pipeline cockpit", "quote/plan builder", "light-dark dual admin UI"],
+    "source": "/home/fivelidz/projects/tradez-sales/src",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tradez-sales/src",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0f1a24",
+      "surface": "#222d39",
+      "ink": "#e9eff6",
+      "accent": "#c9a24e",
+      "accent2": "#9d7bff",
+      "extra": ["#eaf0f6", "#ffffff", "#9db0c2", "#6d8090", "#d29922", "#6639d6"]
+    },
+    "fonts": { "body": "system-ui", "mono": "ui-monospace" },
+    "mode": "both",
+    "tags": ["dark", "light", "corporate", "australian", "brand-gold", "violet", "design-tokens", "rounded"],
+    "status": "candidate",
+    "lineage": "Shares tradez house gold #c9a24e with the Concierge console; full 4px spacing / radius / type scales as documented tokens",
+    "signature": "Documented 4px-base token system (spacing s0-s9, radius r1-rf, type f-2xs…f-3xl) with dark default + light theme toggle",
+    "description": "Sales cockpit with the most disciplined token set of the cluster: dark navy-slate default plus full light theme, Tradez gold primary and violet secondary, system-font type scale from 10.5px to 34px."
+  }
+]

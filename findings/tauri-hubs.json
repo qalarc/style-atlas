@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Qalarc App Hub",
+    "nativeId": "com.fivelidz.apphub",
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["desktop app launcher", "personal app marketplace", "catalog dashboard with status polling"],
+    "source": "/home/fivelidz/projects/tauri_app_hub/dist",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tauri_app_hub/dist",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#1d2021",
+      "surface": "#3c3836",
+      "ink": "#ebdbb2",
+      "accent": "#fabd2f",
+      "accent2": "#fe8019",
+      "extra": ["#282828", "#32302f", "#665c54", "#8ec07c", "#83a598", "#d3869b", "#b8bb26", "#fb4934"]
+    },
+    "fonts": { "display": "Inter", "body": "Inter", "mono": "JetBrains Mono" },
+    "mode": "dark",
+    "tags": ["dark", "gruvbox", "warm", "rounded", "gradient", "glassmorphism", "sidebar", "dashboard", "techy"],
+    "status": "candidate",
+    "lineage": "README still documents an earlier 'deep-navy background, violet gradient accents' aesthetic; the current skin is Gruvbox dark — navy survives only as the rgba(10,11,30,.7) glass topbar tint",
+    "signature": "2x2 brand glyph tile in a yellow-to-orange gradient with glow box-shadow, layered radial yellow/orange washes over a gruvbox-dark gradient background, blurred glass topbar, 232px category sidebar with live status dots",
+    "description": "Gruvbox-dark launcher/marketplace dashboard: rounded cards on a warm dark gradient with yellow/orange radial glows, glass topbar, collapsible category sidebar, density toggle and a terminal-style build-log panel."
+  },
+  {
+    "name": "Local Media Studio — Amber CRT Boot",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["local AI image/video studio UI", "boot/splash screens", "dense tool dashboards"],
+    "source": "/home/fivelidz/projects/local_image_video/tauri_app/dist",
+    "mount": {
+      "dir": "/home/fivelidz/projects/local_image_video/tauri_app/dist",
+      "file": "loading.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0b0d09",
+      "surface": "#12140d",
+      "ink": "#e8d8a0",
+      "accent": "#ffb000",
+      "accent2": "#38f9d7",
+      "extra": ["#10120b", "#8a5a00", "#33ff66", "#ff5f87", "#ff3b3b", "#c2b075"]
+    },
+    "fonts": { "display": "JetBrains Mono", "body": "Roboto", "mono": "JetBrains Mono" },
+    "mode": "dark",
+    "tags": ["retro", "terminal", "phosphor", "crt", "dark", "mono", "amber", "scanlines", "animated", "techy"],
+    "status": "candidate",
+    "lineage": "Canonical implementation of the shared fivelidz retro-terminal tokens (SHARED_DESIGN.md); full themeable UI lives at ../ui/static (served by backend :8931) after the 2026-07-20 'legible pass' — prior retro theme archived as style_*_pre_legible.css",
+    "signature": "ASCII block-font banner in a box-drawn frame, striped phosphor progress bar, scanline + vignette overlays, blinking block cursor, '> '-prefixed uppercase status line",
+    "description": "Phosphor-amber CRT boot screen for the Tauri shell: ASCII banner, segmented progress bar and scanline/vignette FX while polling the local backend; the full themeable studio UI (amber/green/gruvbox/synthwave) loads once the backend on :8931 is up."
+  },
+  {
+    "name": "Tulpa Studio — Phosphor Terminal",
+    "nativeId": null,
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "dashboard",
+    "useCases": ["AI persona/character chat studio", "dataset & training dashboards", "dense desktop tool UIs"],
+    "source": "/home/fivelidz/projects/tulpa_studio/ui",
+    "mount": {
+      "dir": "/home/fivelidz/projects/tulpa_studio/ui",
+      "file": "index.html",
+      "data": null,
+      "assets": null,
+      "shared": null
+    },
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0b0d09",
+      "surface": "#10120b",
+      "ink": "#e8d8a0",
+      "accent": "#ffb000",
+      "accent2": "#38f9d7",
+      "extra": ["#12140d", "#8a5a00", "#33ff66", "#ff5f87", "#ff3b3b", "#c2b075"]
+    },
+    "fonts": { "display": "JetBrains Mono", "body": "Roboto", "mono": "JetBrains Mono" },
+    "mode": "dark",
+    "tags": ["retro", "terminal", "phosphor", "crt", "dark", "themeable", "mono", "dense", "animated", "techy"],
+    "status": "candidate",
+    "lineage": "Skin replicated 1:1 from Local Media Studio ('STYLEBENCH — RETRO CRT / TERMINAL SKIN' v0.3.0 'phosphor pass'); adds a 5th monokai palette; /home/fivelidz/projects/tauri_apps/tulpa_studio is a symlink to this repo (not a distinct app)",
+    "signature": "Raised panel legends overhanging panel borders by 8px, box-drawn ASCII banner + status strip, dense statusline with service dots, 5 switchable phosphor palettes (amber/green/gruvbox/synthwave/monokai), glow reserved for the banner only",
+    "description": "Persona-conversation studio in the shared retro-terminal skin: dense sunken panels with raised legends, monospace data readouts over legible Roboto body text, amber by default with green/gruvbox/synthwave/monokai themes via data-theme."
+  },
+  {
+    "name": "fivelidz Retro-Terminal Design System",
+    "nativeId": "amber-crt",
+    "project": "tauri apps",
+    "prefix": "TA",
+    "category": "theme-kit",
+    "useCases": ["desktop tool UIs", "developer dashboards", "terminal-style control panels", "boot screens"],
+    "source": "/home/fivelidz/projects/tauri_apps/SHARED_DESIGN.md",
+    "mount": null,
+    "externalUrl": null,
+    "palette": {
+      "bg": "#0b0d09",
+      "surface": "#12140d",
+      "ink": "#e8d8a0",
+      "accent": "#ffb000",
+      "accent2": "#38f9d7",
+      "extra": ["#33ff66", "#ff5f87", "#ff3b3b", "#1d2021", "#282828", "#ebdbb2", "#8ec07c", "#fabd2f", "#fe8019"]
+    },
+    "fonts": { "display": "JetBrains Mono", "body": "JetBrains Mono", "mono": "IBM Plex Mono" },
+    "mode": "dark",
+    "tags": ["theme-kit", "retro", "terminal", "phosphor", "dark", "mono", "themeable", "techy", "dense"],
+    "status": "final",
+    "lineage": "Documented standard in SHARED_DESIGN.md: Local Media Studio implements the full themeable version, Tulpa Studio replicates it 1:1 (+monokai); apps later added a 'legible pass' (Roboto body text) softening the mono-everywhere rule; Qalarc App Hub opts out with its own gruvbox launcher skin",
+    "signature": "0px border-radius, 1px solid phosphor borders, sunken panels, box-drawing chars for frames/gauges (┌─┐ ▰▱ █▓▒░), buttons as bracketed terminal labels [ RUN ]/[F1], toggleable CRT FX (scanlines + glow + vignette), uppercase letter-spaced headers",
+    "description": "Shared design tokens for fivelidz Tauri apps: a monospace retro-terminal language with four themeable palettes (amber-crt default, green-phosphor, gruvbox, synthwave) switched via data-theme on <body> and persisted in localStorage."
+  }
+]

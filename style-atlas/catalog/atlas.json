@@ -1,8 +1,8 @@
 {
  "meta": {
   "name": "Style Atlas",
-  "generated": "2026-09-12T18:03:59",
-  "count": 448,
+  "generated": "2026-09-12T21:34:12",
+  "count": 461,
   "projects": [
    "GLM apps",
    "airtree pathfinders",
@@ -23,6 +23,7 @@
    "reps_with_friends",
    "resume online",
    "sahha / health",
+   "tauri apps",
    "trade.sydney demos",
    "tradez.au",
    "volkus.net",
@@ -14345,6 +14346,747 @@
    "lineage": "Vite+Tailwind web frontend of the OptiCore system; ModernApp.tsx (light) and ModernAppDark.tsx (slate+cyan) variants sit alongside SimpleApp.tsx",
    "signature": "tailwind blue-600 primary with cyan #06b6d4 highlights; dark variant swaps to slate-800 surfaces",
    "description": "Conventional clean Tailwind clinic dashboard: gray-100 canvas, white cards, blue-600 primary buttons and cyan accent stats, with a parallel slate/cyan dark variant (ModernAppDark). Practical and information-dense."
+  },
+  {
+   "code": "TA-001",
+   "ident": "[\"src\", \"/home/fivelidz/projects/claude-pulse/app/src\"]",
+   "name": "Claude Pulse — Tauri Desktop",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "API usage monitor",
+    "developer telemetry dashboard",
+    "desktop gauge widgets"
+   ],
+   "source": "/home/fivelidz/projects/claude-pulse/app/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/claude-pulse/app/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0d0f14",
+    "surface": "#161a23",
+    "ink": "#e6e9ef",
+    "accent": "#d97757",
+    "accent2": "#5b9bd5",
+    "extra": [
+     "#151820",
+     "#7a8294",
+     "#232733",
+     "#c08fe0",
+     "#4caf82",
+     "#f5c451",
+     "#e0564a"
+    ]
+   },
+   "fonts": {
+    "body": "system-ui (browser default)"
+   },
+   "mode": "dark",
+   "tags": [
+    "clay-accent",
+    "dark",
+    "gauge",
+    "minimal",
+    "monitor",
+    "techy"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": "Desktop Tauri app source; qalarc.json QA entry 'Claude Pulse — Live' is the standalone web demo of the same tool",
+   "signature": "Canvas rate-limit gauge with needle/peak/limit markers + Anthropic clay (#d97757) accent on near-black",
+   "description": "Vanilla-JS desktop monitor for Claude API usage: big canvas gauge, stat tiles, tabbed views. Near-black blue-tinted surfaces with warm Anthropic-clay accent and semantic in/out/peak/429 colors."
+  },
+  {
+   "code": "TA-002",
+   "ident": "[\"src\", \"/home/fivelidz/projects/Knowledge_systems/app/src\"]",
+   "name": "Archon — Knowledge Console",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "research workbench",
+    "knowledge management UI",
+    "agent sandbox console"
+   ],
+   "source": "/home/fivelidz/projects/Knowledge_systems/app/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/Knowledge_systems/app/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#080c14",
+    "surface": "#0f1523",
+    "ink": "#f5f5f5",
+    "accent": "#6366f1",
+    "accent2": "#818cf8",
+    "extra": [
+     "#162035",
+     "#1e2d45",
+     "#9ca3af",
+     "#22c55e",
+     "#f59e0b",
+     "#ef4444"
+    ]
+   },
+   "fonts": {
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "dark",
+    "editorial",
+    "indigo",
+    "scholarly",
+    "techy",
+    "three-pane"
+   ],
+   "era": "2026-05",
+   "status": "candidate",
+   "lineage": "Supersedes _archive_stale_dist_2026_05_19; scope.css/knowledge_panel.css map onto the same token set",
+   "signature": "48px topbar + 280px left rail + 320px right drawer + 32px activity ticker frame; indigo #6366F1 focus glow",
+   "description": "'Archon — Know more. Prove it.' Deep navy-black research workbench with indigo accent, three-pane shell (sources rail, sandbox, drawer) and a live activity ticker. Inter for UI, JetBrains Mono for data."
+  },
+  {
+   "code": "TA-003",
+   "ident": "[\"src\", \"/home/fivelidz/projects/MASTER_PROJECTS/chanalyse-monitor/src\"]",
+   "name": "chanalyse Monitor",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "infrastructure status board",
+    "fleet health monitor",
+    "minimal ops dashboard"
+   ],
+   "source": "/home/fivelidz/projects/MASTER_PROJECTS/chanalyse-monitor/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/MASTER_PROJECTS/chanalyse-monitor/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0f1115",
+    "surface": "#171a21",
+    "ink": "#e6e9ef",
+    "accent": "#ff6b35",
+    "extra": [
+     "#1d212b",
+     "#2a2f3a",
+     "#8b93a3",
+     "#26a269",
+     "#e5a50a",
+     "#e5484d"
+    ]
+   },
+   "fonts": {
+    "body": "system-ui",
+    "mono": "ui-monospace"
+   },
+   "mode": "dark",
+   "tags": [
+    "compact",
+    "dark",
+    "industrial",
+    "minimal",
+    "status-pills"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": null,
+   "signature": "Outlined status pills (ok/warn/bad) + orange #ff6b35 hover accent; 14px base, dense single-page board",
+   "description": "Deliberately minimal dark ops board: flat panels, uppercase micro-headers, outline status pills, one warm orange accent. System fonts, no decoration — pure signal."
+  },
+  {
+   "code": "TA-004",
+   "ident": "[\"src\", \"/home/fivelidz/projects/museall_image_visualiser/desktop/www/suite\"]",
+   "name": "MUSE SUITE Hub",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "landing",
+   "useCases": [
+    "product suite launcher",
+    "audio-visual tool landing",
+    "synthwave promo page"
+   ],
+   "source": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/suite",
+   "mount": {
+    "dir": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/suite",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0a0a14",
+    "ink": "#e8e6f0",
+    "accent": "#ff9a3c",
+    "accent2": "#b16cff",
+    "extra": [
+     "#53d7ff",
+     "#39ff8e",
+     "#8a87a0",
+     "#5a5870"
+    ]
+   },
+   "fonts": {
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "animated",
+    "dark",
+    "gradient",
+    "grid",
+    "neon",
+    "retro",
+    "synthwave"
+   ],
+   "era": "2026-09",
+   "status": "candidate",
+   "lineage": "Launcher hub for MUSEALL v3 + CONDUCTOR (both cataloged separately); museall root index.html redirects here",
+   "signature": "48px synthwire grid (two 1px linear-gradients) over purple/cyan radial glows; ◢◣ glyph logo in #ff9a3c",
+   "description": "Single-file synthwave landing hub for the MUSE audio-visual instrument set: deep space-navy background with subtle grid lines, purple/cyan radial glows, neon orange→purple gradient accents."
+  },
+  {
+   "code": "TA-005",
+   "ident": "[\"src\", \"/home/fivelidz/projects/museall_image_visualiser/desktop/www/conductor\"]",
+   "name": "CONDUCTOR — Gesture Instrument Console",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "media control console",
+    "live-performance tool UI",
+    "signal routing panel"
+   ],
+   "source": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/conductor",
+   "mount": {
+    "dir": "/home/fivelidz/projects/museall_image_visualiser/desktop/www/conductor",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0a0a14",
+    "surface": "#0f0f1c",
+    "ink": "#e6e6f0",
+    "accent": "#ff9a3c",
+    "accent2": "#b16cff",
+    "extra": [
+     "#3cf0ff",
+     "#2dffa6",
+     "#ff3b5c",
+     "#1f1f3a",
+     "#7a7a99"
+    ]
+   },
+   "fonts": {
+    "body": "JetBrains Mono",
+    "mono": "Roboto Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "dark",
+    "dense",
+    "glow",
+    "mono",
+    "neon",
+    "synthwave",
+    "techy"
+   ],
+   "era": "2026-09",
+   "status": "candidate",
+   "lineage": "Sibling instrument of MUSEALL v3 inside the MUSE suite; shared #0a0a14 base with the Suite hub",
+   "signature": "Gradient brand wordmark (orange→purple text-clip) + glowing source meters with purple→orange fill bars",
+   "description": "All-mono gesture-control console: fixed toolbar with glowing ◢◣ brand, two-column panel grid, live signal meters with gradient fills, LED pills and neon-glow buttons. 13px mono everywhere, tabular numerals."
+  },
+  {
+   "code": "TA-006",
+   "ident": "[\"src\", \"/home/fivelidz/projects/signal-whatsapp-hub-public/src\"]",
+   "name": "Signal WhatsApp Hub — Desktop",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "message-bridge ops console",
+    "AI/human chat triage",
+    "single-file admin tool"
+   ],
+   "source": "/home/fivelidz/projects/signal-whatsapp-hub-public/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/signal-whatsapp-hub-public/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0d1117",
+    "surface": "#161b22",
+    "ink": "#e6edf3",
+    "accent": "#4cc2ff",
+    "accent2": "#7c5cff",
+    "extra": [
+     "#1c232c",
+     "#2a3340",
+     "#8b98a5",
+     "#3a76f0",
+     "#25d366",
+     "#3fb950",
+     "#d29922",
+     "#f85149"
+    ]
+   },
+   "fonts": {
+    "body": "Segoe UI",
+    "mono": "monospace"
+   },
+   "mode": "dark",
+   "tags": [
+    "brand-coded",
+    "chat-app",
+    "compact",
+    "dark",
+    "github-dark",
+    "techy"
+   ],
+   "era": "2026-06",
+   "status": "candidate",
+   "lineage": "Public repo of the Qalarc Hub desktop app; single 599-line self-contained index.html",
+   "signature": "Platform-coded semantics: Signal blue #3a76f0, WhatsApp green #25d366, AI violet #7c5cff vs manual cyan #4cc2ff",
+   "description": "GitHub-dark single-file ops console for a Signal+WhatsApp bridge: message feed with AI/human color coding, brand-colored platform chips, ok/warn/bad status system."
+  },
+  {
+   "code": "TA-007",
+   "ident": "[\"src\", \"/home/fivelidz/projects/solar_control/solarscope\"]",
+   "name": "SolarScope — SP-PRO Monitor (Tauri)",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "solar/battery energy dashboard",
+    "IoT telemetry UI",
+    "live flow visualization"
+   ],
+   "source": "/home/fivelidz/projects/solar_control/solarscope",
+   "mount": null,
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0e1116",
+    "surface": "#1a2029",
+    "ink": "#e6edf3",
+    "accent": "#f5a623",
+    "accent2": "#2ecc71",
+    "extra": [
+     "#161b22",
+     "#262d38",
+     "#9aa4b2",
+     "#4a90e2",
+     "#9b59b6",
+     "#e74c3c"
+    ]
+   },
+   "fonts": {
+    "body": "system-ui"
+   },
+   "mode": "dark",
+   "tags": [
+    "color-coded",
+    "dark",
+    "energy",
+    "friendly",
+    "monitor",
+    "rounded"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": "Tauri desktop version; qalarc.json QA entry 'SolarScope' is the standalone web demo. No mount: Vite project (root index.html loads /src/main.ts), not statically servable",
+   "signature": "Semantic energy colors: solar amber #f5a623, battery green #2ecc71, load blue #4a90e2, grid grey, shunt purple",
+   "description": "12px-rounded dark energy dashboard for an SP-PRO solar inverter: source-coded color system (solar/battery/load/grid/shunt) over muted GitHub-ish surfaces. TypeScript + canvas charts; Vite-built so no static mount."
+  },
+  {
+   "code": "TA-008",
+   "ident": "[\"src\", \"/home/fivelidz/projects/tradez_concierge/app/src\"]",
+   "name": "Tradez Concierge — Ops Console",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "lead triage console",
+    "AI reply operations",
+    "dense data-table admin"
+   ],
+   "source": "/home/fivelidz/projects/tradez_concierge/app/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/tradez_concierge/app/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0d1117",
+    "surface": "#161b22",
+    "ink": "#e6edf3",
+    "accent": "#4cc2ff",
+    "accent2": "#a48bff",
+    "extra": [
+     "#c9a24e",
+     "#e8c77a",
+     "#5fd06e",
+     "#1c232c",
+     "#2a3340",
+     "#647a95",
+     "#3fb950",
+     "#d29922"
+    ]
+   },
+   "fonts": {
+    "body": "Segoe UI",
+    "mono": "ui-monospace"
+   },
+   "mode": "dark",
+   "tags": [
+    "accessible",
+    "australian",
+    "brand-gold",
+    "corporate",
+    "dark",
+    "dense",
+    "github-dark"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": "House brand gold #C9A24E shared with tradez.au public site and the Tradez Sales Cockpit; documented WCAG AA/AAA contrast budget in-file",
+   "signature": "Tradez brand gold (#C9A24E) on GitHub-dark + two-tier line system: decorative --line vs 3.59:1 control-boundary --line-ctl; tabular-nums ticking tables",
+   "description": "Single-file ops console for Tradez lead concierge: GitHub-dark surfaces with house gold, AI(violet)/manual(cyan) attribution colors, tabular-nums dense tables, 5s-poll-safe focus/reduced-motion accessibility tokens."
+  },
+  {
+   "code": "TA-009",
+   "ident": "[\"src\", \"/home/fivelidz/projects/tradez-sales/src\"]",
+   "name": "Tradez Sales Cockpit",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "sales pipeline cockpit",
+    "quote/plan builder",
+    "light-dark dual admin UI"
+   ],
+   "source": "/home/fivelidz/projects/tradez-sales/src",
+   "mount": {
+    "dir": "/home/fivelidz/projects/tradez-sales/src",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0f1a24",
+    "surface": "#222d39",
+    "ink": "#e9eff6",
+    "accent": "#c9a24e",
+    "accent2": "#9d7bff",
+    "extra": [
+     "#eaf0f6",
+     "#ffffff",
+     "#9db0c2",
+     "#6d8090",
+     "#d29922",
+     "#6639d6"
+    ]
+   },
+   "fonts": {
+    "body": "system-ui",
+    "mono": "ui-monospace"
+   },
+   "mode": "both",
+   "tags": [
+    "australian",
+    "brand-gold",
+    "corporate",
+    "dark",
+    "design-tokens",
+    "light",
+    "rounded",
+    "violet"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": "Shares tradez house gold #c9a24e with the Concierge console; full 4px spacing / radius / type scales as documented tokens",
+   "signature": "Documented 4px-base token system (spacing s0-s9, radius r1-rf, type f-2xs…f-3xl) with dark default + light theme toggle",
+   "description": "Sales cockpit with the most disciplined token set of the cluster: dark navy-slate default plus full light theme, Tradez gold primary and violet secondary, system-font type scale from 10.5px to 34px."
+  },
+  {
+   "code": "TA-010",
+   "ident": "[\"id\", \"TA\", \"com.fivelidz.apphub\"]",
+   "name": "Qalarc App Hub",
+   "nativeId": "com.fivelidz.apphub",
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "desktop app launcher",
+    "personal app marketplace",
+    "catalog dashboard with status polling"
+   ],
+   "source": "/home/fivelidz/projects/tauri_app_hub/dist",
+   "mount": {
+    "dir": "/home/fivelidz/projects/tauri_app_hub/dist",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#1d2021",
+    "surface": "#3c3836",
+    "ink": "#ebdbb2",
+    "accent": "#fabd2f",
+    "accent2": "#fe8019",
+    "extra": [
+     "#282828",
+     "#32302f",
+     "#665c54",
+     "#8ec07c",
+     "#83a598",
+     "#d3869b",
+     "#b8bb26",
+     "#fb4934"
+    ]
+   },
+   "fonts": {
+    "display": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "dark",
+    "dashboard",
+    "glassmorphism",
+    "gradient",
+    "gruvbox",
+    "rounded",
+    "sidebar",
+    "techy",
+    "warm"
+   ],
+   "era": "2026-08",
+   "status": "candidate",
+   "lineage": "README still documents an earlier 'deep-navy background, violet gradient accents' aesthetic; the current skin is Gruvbox dark — navy survives only as the rgba(10,11,30,.7) glass topbar tint",
+   "signature": "2x2 brand glyph tile in a yellow-to-orange gradient with glow box-shadow, layered radial yellow/orange washes over a gruvbox-dark gradient background, blurred glass topbar, 232px category sidebar with live status dots",
+   "description": "Gruvbox-dark launcher/marketplace dashboard: rounded cards on a warm dark gradient with yellow/orange radial glows, glass topbar, collapsible category sidebar, density toggle and a terminal-style build-log panel."
+  },
+  {
+   "code": "TA-011",
+   "ident": "[\"src\", \"/home/fivelidz/projects/local_image_video/tauri_app/dist\"]",
+   "name": "Local Media Studio — Amber CRT Boot",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "local AI image/video studio UI",
+    "boot/splash screens",
+    "dense tool dashboards"
+   ],
+   "source": "/home/fivelidz/projects/local_image_video/tauri_app/dist",
+   "mount": {
+    "dir": "/home/fivelidz/projects/local_image_video/tauri_app/dist",
+    "file": "loading.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0b0d09",
+    "surface": "#12140d",
+    "ink": "#e8d8a0",
+    "accent": "#ffb000",
+    "accent2": "#38f9d7",
+    "extra": [
+     "#10120b",
+     "#8a5a00",
+     "#33ff66",
+     "#ff5f87",
+     "#ff3b3b",
+     "#c2b075"
+    ]
+   },
+   "fonts": {
+    "display": "JetBrains Mono",
+    "body": "Roboto",
+    "mono": "JetBrains Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "amber",
+    "animated",
+    "crt",
+    "dark",
+    "mono",
+    "phosphor",
+    "retro",
+    "scanlines",
+    "techy",
+    "terminal"
+   ],
+   "era": "2026-07",
+   "status": "candidate",
+   "lineage": "Canonical implementation of the shared fivelidz retro-terminal tokens (SHARED_DESIGN.md); full themeable UI lives at ../ui/static (served by backend :8931) after the 2026-07-20 'legible pass' — prior retro theme archived as style_*_pre_legible.css",
+   "signature": "ASCII block-font banner in a box-drawn frame, striped phosphor progress bar, scanline + vignette overlays, blinking block cursor, '> '-prefixed uppercase status line",
+   "description": "Phosphor-amber CRT boot screen for the Tauri shell: ASCII banner, segmented progress bar and scanline/vignette FX while polling the local backend; the full themeable studio UI (amber/green/gruvbox/synthwave) loads once the backend on :8931 is up."
+  },
+  {
+   "code": "TA-012",
+   "ident": "[\"src\", \"/home/fivelidz/projects/tulpa_studio/ui\"]",
+   "name": "Tulpa Studio — Phosphor Terminal",
+   "nativeId": null,
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "dashboard",
+   "useCases": [
+    "AI persona/character chat studio",
+    "dataset & training dashboards",
+    "dense desktop tool UIs"
+   ],
+   "source": "/home/fivelidz/projects/tulpa_studio/ui",
+   "mount": {
+    "dir": "/home/fivelidz/projects/tulpa_studio/ui",
+    "file": "index.html",
+    "data": null,
+    "assets": null,
+    "shared": null
+   },
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0b0d09",
+    "surface": "#10120b",
+    "ink": "#e8d8a0",
+    "accent": "#ffb000",
+    "accent2": "#38f9d7",
+    "extra": [
+     "#12140d",
+     "#8a5a00",
+     "#33ff66",
+     "#ff5f87",
+     "#ff3b3b",
+     "#c2b075"
+    ]
+   },
+   "fonts": {
+    "display": "JetBrains Mono",
+    "body": "Roboto",
+    "mono": "JetBrains Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "animated",
+    "crt",
+    "dark",
+    "dense",
+    "mono",
+    "phosphor",
+    "retro",
+    "techy",
+    "terminal",
+    "themeable"
+   ],
+   "era": "2026-09",
+   "status": "candidate",
+   "lineage": "Skin replicated 1:1 from Local Media Studio ('STYLEBENCH — RETRO CRT / TERMINAL SKIN' v0.3.0 'phosphor pass'); adds a 5th monokai palette; /home/fivelidz/projects/tauri_apps/tulpa_studio is a symlink to this repo (not a distinct app)",
+   "signature": "Raised panel legends overhanging panel borders by 8px, box-drawn ASCII banner + status strip, dense statusline with service dots, 5 switchable phosphor palettes (amber/green/gruvbox/synthwave/monokai), glow reserved for the banner only",
+   "description": "Persona-conversation studio in the shared retro-terminal skin: dense sunken panels with raised legends, monospace data readouts over legible Roboto body text, amber by default with green/gruvbox/synthwave/monokai themes via data-theme."
+  },
+  {
+   "code": "TA-013",
+   "ident": "[\"id\", \"TA\", \"amber-crt\"]",
+   "name": "fivelidz Retro-Terminal Design System",
+   "nativeId": "amber-crt",
+   "project": "tauri apps",
+   "prefix": "TA",
+   "category": "theme-kit",
+   "useCases": [
+    "desktop tool UIs",
+    "developer dashboards",
+    "terminal-style control panels",
+    "boot screens"
+   ],
+   "source": "/home/fivelidz/projects/tauri_apps/SHARED_DESIGN.md",
+   "mount": null,
+   "externalUrl": null,
+   "palette": {
+    "bg": "#0b0d09",
+    "surface": "#12140d",
+    "ink": "#e8d8a0",
+    "accent": "#ffb000",
+    "accent2": "#38f9d7",
+    "extra": [
+     "#33ff66",
+     "#ff5f87",
+     "#ff3b3b",
+     "#1d2021",
+     "#282828",
+     "#ebdbb2",
+     "#8ec07c",
+     "#fabd2f"
+    ]
+   },
+   "fonts": {
+    "display": "JetBrains Mono",
+    "body": "JetBrains Mono",
+    "mono": "IBM Plex Mono"
+   },
+   "mode": "dark",
+   "tags": [
+    "dark",
+    "dense",
+    "mono",
+    "phosphor",
+    "retro",
+    "techy",
+    "terminal",
+    "theme-kit",
+    "themeable"
+   ],
+   "era": "2026-07",
+   "status": "final",
+   "lineage": "Documented standard in SHARED_DESIGN.md: Local Media Studio implements the full themeable version, Tulpa Studio replicates it 1:1 (+monokai); apps later added a 'legible pass' (Roboto body text) softening the mono-everywhere rule; Qalarc App Hub opts out with its own gruvbox launcher skin",
+   "signature": "0px border-radius, 1px solid phosphor borders, sunken panels, box-drawing chars for frames/gauges (┌─┐ ▰▱ █▓▒░), buttons as bracketed terminal labels [ RUN ]/[F1], toggleable CRT FX (scanlines + glow + vignette), uppercase letter-spaced headers",
+   "description": "Shared design tokens for fivelidz Tauri apps: a monospace retro-terminal language with four themeable palettes (amber-crt default, green-phosphor, gruvbox, synthwave) switched via data-theme on <body> and persisted in localStorage."
   },
   {
    "code": "TP-001",
