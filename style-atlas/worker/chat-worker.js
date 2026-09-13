@@ -64,6 +64,49 @@ function extractFilter(text) {
   return obj.filter || obj;
 }
 
+
+/* ---------- deterministic matcher (last-resort, always works) ---------- */
+function builtinMatch(message) {
+  const msg = (message || "").toLowerCase();
+  const f = {};
+  if (/\bdark\b/.test(msg)) f.mode = "dark";
+  if (/\blight\b|\bbright\b/.test(msg)) f.mode = "light";
+  for (const cat of ["website","landing","directory","phone-app","chat-app","game","dashboard","theme-kit","logo","hero-module","font-system","terminal","poster","business-card"]) {
+    if (msg.includes(cat) || msg.includes(cat.replace("-", " "))) { f.category = cat; break; }
+  }
+  if (!f.category && msg.includes("chat")) f.category = "chat-app";
+  if (!f.category && (msg.includes("logo") || msg.includes("brand mark"))) f.category = "logo";
+  const proj = { "tradez":"tradez","x10":"x10","gmux":"gmux","endispute":"endispute",
+    "qalarc":"qalarc","reps":"reps","airtree":"airtree","hero":"hero-lab",
+    "crypto":"qal-coin","coin":"qal-coin","sahha":"sahha","health":"sahha",
+    "goetica":"goetica","tauri":"tauri apps","bella":"bella" };
+  for (const [w, p] of Object.entries(proj)) {
+    if (msg.includes(w)) { f.project = p; break; }
+  }
+  for (const w of ["gold","green","blue","navy","neon","red","purple","teal","warm","cool","pink","orange","violet","cream","serif","mono","minimal","brutalist","glass","retro","organic","editorial","premium","luxury"]) {
+    if (msg.includes(w)) { f.search = w; break; }
+  }
+  const codes = [];
+  for (const line of DIGEST) {
+    const [code, name, project, category, mode, tags] = line.split("|");
+    let ok = true;
+    if (f.mode && mode !== f.mode) ok = false;
+    if (ok && f.category && category !== f.category) ok = false;
+    if (ok && f.project && !project.toLowerCase().includes(f.project.toLowerCase())) ok = false;
+    if (ok && f.search) {
+      const hay = (name + " " + tags + " " + code).toLowerCase();
+      if (!hay.includes(f.search)) ok = false;
+    }
+    if (ok) codes.push(code);
+    if (codes.length >= 12) break;
+  }
+  const head = codes.length
+    ? "Showing " + codes.length + " matching styles. Cycle with the arrow keys."
+    : "No exact match — try: 'dark gold', 'chat app', 'logo concepts', 'gmux dark'.";
+  const filter = { ...f, ...(codes.length ? { codes } : {}) };
+  return { reply: head, filter };
+}
+
 async function zaiChat(message, history, key) {
   const body = {
     model: MODELS[0],
@@ -297,9 +340,12 @@ export default {
           status: 200, headers: { "Content-Type": "application/json", ...CORS },
         });
       } catch (e) {
-        return new Response(JSON.stringify({ reply: "Chat backend error: " + e.message, matcher: "error" }), {
-          status: 200, headers: { "Content-Type": "application/json", ...CORS },
-        });
+        // Z.AI unavailable (rate limit / upstream error) — degrade gracefully
+        const fb = builtinMatch(msg);
+        return new Response(JSON.stringify({
+          reply: "AI concierge is rate-limited right now — here's the built-in matcher:\n" + fb.reply,
+          filter: fb.filter, matcher: "builtin",
+        }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
       }
     }
     // everything else → static assets
