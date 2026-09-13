@@ -582,6 +582,9 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/ratings":
             self.send_json({"ratings": load_ratings()})
             return
+        if path == "/api/combos":
+            self.send_json({"combos": load_combos()})
+            return
         if path == "/api/views":
             self.send_json({"views": load_json_file(VIEWS_PATH)})
             return
@@ -700,6 +703,22 @@ class Handler(BaseHTTPRequestHandler):
             save_picks(picks)
             self.send_json(picks)
             return
+        if path == "/api/combos":
+            body = self.read_body()
+            parts = body.get("parts") or {}
+            needed = ("palette", "type", "buttons", "motion")
+            if not all(parts.get(k) in BY_CODE for k in needed):
+                self.send_json({"error": "parts must be 4 valid style codes"}, code=400)
+                return
+            combos = load_combos()
+            nxt = 1 + max((int(c["code"][3:]) for c in combos
+                           if c["code"].startswith("FX-") and c["code"][3:].isdigit()), default=0)
+            combo = {"code": f"FX-{nxt:03d}", "name": (body.get("name") or "Untitled fusion")[:80],
+                     "parts": {k: parts[k] for k in needed}, "ts": int(time.time())}
+            combos.insert(0, combo)
+            save_combos(combos)
+            self.send_json({"combo": combo})
+            return
         if path == "/api/view":
             body = self.read_body()
             code = body.get("code", "")
@@ -715,7 +734,9 @@ class Handler(BaseHTTPRequestHandler):
             body = self.read_body()
             code = body.get("code", "")
             stars = body.get("stars")
-            if code in BY_CODE and isinstance(stars, int) and 1 <= stars <= 5:
+            known = code in BY_CODE or any(
+                c["code"] == code for c in load_combos())
+            if known and isinstance(stars, int) and 1 <= stars <= 5:
                 r = load_ratings()
                 x = r.setdefault(code, {"s": 0, "c": 0})
                 x["s"] += stars
@@ -831,6 +852,13 @@ def save_picks(picks):
 
 
 RATINGS_PATH = os.path.join(HERE, "catalog", "ratings.json")
+COMBOS_PATH = os.path.join(HERE, "catalog", "combos.json")
+
+def load_combos():
+    return load_json_file(COMBOS_PATH).get("combos", [])
+
+def save_combos(combos):
+    save_json_file(COMBOS_PATH, {"combos": combos})
 
 VIEWS_PATH = os.path.join(HERE, "catalog", "views.json")
 OUT_PATH = os.path.join(HERE, "catalog", "outbound.json")

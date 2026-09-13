@@ -342,3 +342,24 @@ kbd {
 }
 .tlink:hover { background:var(--raise); }
 .stars.rate i.pre { color:var(--gold); }
+
+/* ---------- fusion lab ---------- */
+.fxrow { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
+.fxrow label { width:90px; flex:none; font-size:12px; letter-spacing:1px;
+  text-transform:uppercase; color:var(--faint); }
+.fxrow input[list] { flex:1; background:var(--bg); border:1px solid var(--line);
+  color:var(--ink); border-radius:9px; padding:9px 12px; font-size:13px; outline:none; }
+.fxrow input[list]:focus { border-color:var(--accent-dim); }
+.fxrow input.bad { border-color:var(--red); }
+.fxrand { background:var(--raise); border:1px solid var(--line2); color:var(--muted);
+  border-radius:8px; padding:8px 12px; cursor:pointer; }
+.fxrand:hover { color:var(--accent); border-color:var(--accent-dim); }
+.fxcombo { background:var(--surface); border:1px solid var(--line); border-radius:12px;
+  padding:14px; display:flex; flex-direction:column; gap:10px; }
+.fxcombo-top { display:flex; align-items:center; gap:9px; flex-wrap:wrap; }
+.fxcombo-top b { font-size:13.5px; }
+.fxcombo .strip { display:flex; height:20px; border-radius:6px; overflow:hidden;
+  border:1px solid var(--line); }
+.fxcombo .strip div { flex:1; }
+.fxcombo-parts { display:flex; gap:6px; flex-wrap:wrap; }
+.fxcombo-load { display:flex; }

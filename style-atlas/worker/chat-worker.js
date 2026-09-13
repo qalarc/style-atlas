@@ -196,6 +196,40 @@ export default {
         headers: { "Content-Type": "application/json", ...CORS } });
     }
 
+    // ---------- fusion combos ----------
+    if (url.pathname === "/api/combos" && request.method === "GET") {
+      const cl = await loadKV(env, "combosList");
+        return new Response(JSON.stringify({ combos: Array.isArray(cl) ? cl : [] }),
+        { headers: { "Content-Type": "application/json", ...CORS } });
+    }
+    if (url.pathname === "/api/combos" && request.method === "POST") {
+      let body = {};
+      try { body = await request.json(); } catch {}
+      const parts = body.parts || {};
+      const validCodes = new Set(DIGEST.map((l) => l.split("|")[0]));
+      const needed = ["palette", "type", "buttons", "motion"];
+      if (!needed.every((k) => validCodes.has(parts[k]))) {
+        return new Response(JSON.stringify({ error: "parts must be 4 valid style codes" }),
+          { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const raw = await loadKV(env, "combosList");
+      const list = Array.isArray(raw) ? raw : [];
+      const nxt = 1 + list.reduce((m, c) => {
+        const n = parseInt(String(c.code || "").slice(3), 10);
+        return isNaN(n) ? m : Math.max(m, n);
+      }, 0);
+      const combo = {
+        code: "FX-" + String(nxt).padStart(3, "0"),
+        name: String(body.name || "Untitled fusion").slice(0, 80),
+        parts: Object.fromEntries(needed.map((k) => [k, parts[k]])),
+        ts: Date.now() / 1000 | 0,
+      };
+      list.unshift(combo);
+      await env.RATINGS.put("combosList", JSON.stringify(list));
+      return new Response(JSON.stringify({ combo }), {
+        headers: { "Content-Type": "application/json", ...CORS } });
+    }
+
     if (url.pathname === "/api/ratings" && request.method === "GET") {
       const all = await loadRatings(env);
       return new Response(JSON.stringify({ ratings: all }), {
@@ -210,6 +244,8 @@ export default {
         stars = parseInt(b.stars, 10);
       } catch {}
       const validCodes = new Set(DIGEST.map((l) => l.split("|")[0]));
+      const cbs = await loadKV(env, "combosList");
+      if (Array.isArray(cbs)) cbs.forEach((c) => validCodes.add(c.code));
       if (!validCodes.has(code) || !(stars >= 1 && stars <= 5)) {
         return new Response(JSON.stringify({ error: "bad vote" }), {
           status: 400, headers: { "Content-Type": "application/json", ...CORS },

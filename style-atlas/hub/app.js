@@ -361,7 +361,7 @@ function cardHTML(e, i) {
         <span class="chip">${esc(e.project)}</span>
         ${tags}
       </div>
-      <div class="r3">${starsHTML(e.code, false)}</div>
+      <div class="r3">${starsHTML(e.code, true)}</div>
     </div>
     ${e.status && e.status !== "candidate" ? `<span class="status-rib ${esc(e.status)}">${esc(e.status.toUpperCase())}</span>` : ""}
     <button class="star ${starred ? "on" : ""}" data-code="${esc(e.code)}" title="Star (S)">${starred ? "★" : "☆"}</button>
@@ -586,25 +586,73 @@ function recordView(code) {
     .catch(() => {});
 }
 
+S.histStack = [];
+S.histPos = -1;
+
+function pushHistory(code) {
+  if (S.histStack[S.histPos] === code) return;
+  S.histStack = S.histStack.slice(0, S.histPos + 1);
+  S.histStack.push(code);
+  if (S.histStack.length > 60) S.histStack.shift();
+  S.histPos = S.histStack.length - 1;
+  $("tBack").style.visibility = S.histPos > 0 ? "visible" : "hidden";
+}
+
+function theaterBack() {
+  if (S.histPos <= 0) { closeTheater(); return; }
+  S.histPos -= 1;
+  const code = S.histStack[S.histPos];
+  const i = S.filtered.findIndex((e) => e.code === code);
+  if (i < 0) { closeTheater(); return; }
+  S.theaterIdx = i;                 // navigate without pushing history
+  const e = S.filtered[i];
+  $("theater").classList.add("open");
+  engageShield();
+  const url = previewUrl(e);
+  const fr = $("tFrame"), im = $("tImg"), ext = $("tExt");
+  const isExt = !!e.externalUrl && !hasMount(e);
+  const isImg = !isExt && url.endsWith(".png");
+  ext.style.display = isExt ? "grid" : "none";
+  im.style.display = isImg ? "block" : "none";
+  fr.style.display = (!isExt && !isImg) ? "block" : "none";
+  if (isImg) im.src = url;
+  else if (!isExt) { fr.src = url; fr.dataset.cur = url; }
+  renderTheaterMeta();
+  history.replaceState(null, "", `#${e.code}`);
+  $("tBack").style.visibility = S.histPos > 0 ? "visible" : "hidden";
+}
+
 function openTheater(i) {
   if (i < 0 || i >= S.filtered.length) return;
   S.theaterIdx = i;
+  pushHistory(S.filtered[i].code);
   $("theater").classList.add("open");
   engageShield();
   recordView(S.filtered[i].code);
   const e = S.filtered[i];
   history.replaceState(null, "", `#${e.code}`);
   const url = previewUrl(e);
-  const ext = !!e.externalUrl && !hasMount(e);
-  if (ext) {
-    $("tFrame").style.display = "none";
-    $("tExt").style.display = "grid";
+  const fr = $("tFrame"), im = $("tImg"), ext = $("tExt");
+  const isExt = !!e.externalUrl && !hasMount(e);
+  const isImg = !isExt && url.endsWith(".png");   // static mode thumbs
+  ext.style.display = isExt ? "grid" : "none";
+  im.style.display = isImg ? "block" : "none";
+  fr.style.display = (!isExt && !isImg) ? "block" : "none";
+  if (isExt) {
     $("tExtLink").href = e.externalUrl;
-    $("tExt").querySelector("p").textContent = `${e.name} — external site (${e.externalUrl})`;
+    ext.querySelector("p").textContent = `${e.name} — external site (${e.externalUrl})`;
+  } else if (isImg) {
+    im.src = url;
+    im.alt = e.name;
   } else {
-    $("tFrame").style.display = "block";
-    $("tExt").style.display = "none";
-    $("tFrame").src = url;
+    // force a real reload even when the URL is unchanged (cycling/reopen)
+    if (fr.dataset.cur === url) {
+      fr.src = "about:blank";
+      requestAnimationFrame(() => { fr.src = url; });
+    } else {
+      fr.src = url;
+    }
+    fr.dataset.cur = url;
   }
   renderTheaterMeta();
 }
@@ -631,6 +679,8 @@ $("tShield") && ($("tShield").onclick = () => { $("tShield").style.display = "no
 function closeTheater() {
   $("theater").classList.remove("open");
   $("tFrame").src = "about:blank";
+  $("tFrame").dataset.cur = "";
+  $("tImg").removeAttribute("src");
   history.replaceState(null, "", location.pathname);
   S.theaterIdx = -1;
 }
@@ -680,6 +730,7 @@ function renderTheaterMeta() {
   $("tOpen").onclick = () => window.open(previewUrl(e), "_blank");
   $("tStar").onclick = () => toggleStar(e.code);
 }
+$("tBack").onclick = () => theaterBack();
 $("tPrev").onclick = () => navTheater(-1);
 $("tNext").onclick = () => navTheater(1);
 $("tRandom").onclick = () => { if (S.filtered.length) openTheater(Math.floor(Math.random() * S.filtered.length)); };
@@ -692,9 +743,11 @@ function setView(v) {
   grid.style.display = v === "gallery" ? "grid" : "none";
   $("collections").style.display = v === "collections" ? "grid" : "none";
   $("picksWrap").style.display = v === "picks" ? "block" : "none";
+  $("fusionWrap").style.display = v === "fusion" ? "block" : "none";
   if (v === "gallery") renderGrid();
   if (v === "collections") { renderCollections(); $("count").innerHTML = `<b>${S.catalog.length}</b> styles · ${new Set(S.catalog.map((e) => e.project)).size} projects`; }
   if (v === "picks") renderPicks();
+  if (v === "fusion") window.FusionUI?.refreshCombos();
 }
 document.querySelectorAll(".tabs button").forEach((b) =>
   b.onclick = () => setView(b.dataset.view));
@@ -754,6 +807,7 @@ document.addEventListener("keydown", (ev) => {
     if (ev.key === "ArrowLeft") { ev.preventDefault(); navTheater(-1); }
     else if (ev.key === "ArrowRight") { ev.preventDefault(); navTheater(1); }
     else if (ev.key.toLowerCase() === "s") { ev.preventDefault(); toggleStar(S.filtered[S.theaterIdx].code); }
+    else if (ev.key.toLowerCase() === "b") { ev.preventDefault(); theaterBack(); }
     else if (ev.key.toLowerCase() === "r") { ev.preventDefault(); $("tRandom").click(); }
     return;
   }
@@ -790,6 +844,7 @@ document.addEventListener("keydown", (ev) => {
       else if (k === "g") setView("gallery");
       else if (k === "v") setView("collections");
       else if (k === "p") setView("picks");
+      else if (k === "f") setView("fusion");
     }
   }
 });
@@ -797,6 +852,7 @@ document.addEventListener("keydown", (ev) => {
 /* expose for chatbot */
 window.Atlas = {
   S, apply, setView, openTheaterByCode, toast,
+  starsHTML, castVote, bindStarHover, avgRating,
   setCodesFilter(codes) {
     if (!codes || !codes.length) { S.codesFilter = null; apply(); return; }
     S.codesFilter = new Set(codes);

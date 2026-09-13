@@ -105,8 +105,18 @@ def main():
     open(idx2, "w", encoding="utf-8").write(html)
 
     # app.js static adjustments: catalog fetch path, picks localStorage, preview → thumb image
+    # static mode: previews are thumbnails (or the external URL); no live mounts
     app = os.path.join(out, "app.js")
     js = open(app, encoding="utf-8").read()
+    js = js.replace(
+        "function previewUrl(e) {",
+        """function previewUrl(e) {
+  if (window.STATIC_ATLAS) {
+    if (e.externalUrl) return e.externalUrl;
+    return "/thumbs/" + e.code + ".png";
+  }""",
+        1,
+    )
     js = js.replace(
         'fetch("/api/catalog")',
         'fetch(window.STATIC_ATLAS?"/catalog/atlas.json":"/api/catalog")',
@@ -129,25 +139,6 @@ def main():
     renderPickCount(); if (S.view === "picks") renderPicks();
     return true;
   }""",
-    )
-    # theater: mounted previews unavailable → show screenshot image page
-    js = js.replace(
-        "function previewUrl(e) {",
-        """function previewUrl(e) {
-  if (window.STATIC_ATLAS) {
-    if (e.externalUrl) return e.externalUrl;
-    return "/thumbs/" + e.code + ".png";
-  }""",
-    )
-    # iframe → image display in static mode
-    js = js.replace(
-        '$("tFrame").src = url;',
-        """if (window.STATIC_ATLAS && url.endsWith(".png")) {
-      $("tFrame").style.display="none";
-      const im=document.createElement("img");
-      im.src=url; im.style.cssText="max-width:100%;max-height:100%;margin:auto;display:block";
-      const w=$("tFrameWrap"); w.innerHTML=""; w.appendChild(im);
-    } else { $("tFrame").src = url; }""",
     )
     # count / stats fetches
     open(app, "w", encoding="utf-8").write(js)

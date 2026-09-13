@@ -14,6 +14,7 @@
     <nav class="tabs">
       <button data-view="gallery" class="on">Gallery</button>
       <button data-view="collections">Collections</button>
+      <button data-view="fusion">Fusion ✦</button>
       <button data-view="picks">Picks <span id="pickCount" style="color:var(--gold)"></span></button>
     </nav>
     <div id="searchWrap">
@@ -48,6 +49,19 @@
       <div id="grid"></div>
       <div id="collections" style="display:none"></div>
       <div id="picksWrap" style="display:none"></div>
+      <div id="fusionWrap" style="display:none">
+        <div id="fxLab">
+          <h2 style="margin-bottom:4px">Fusion Lab ✦</h2>
+          <p style="color:var(--muted);margin-bottom:16px;max-width:70ch">Preselect parts from different styles — palette from one, typography from another, buttons and motion from two more — and see the fused result live. Submit the combo and star-vote the best ones.</p>
+          <div id="fxRows"></div>
+          <div class="fxrow" style="margin-top:6px"><label>Name</label>
+            <input id="fxName" placeholder="optional combo name…"></div>
+          <div id="fxPreview" style="margin-top:18px"></div>
+        </div>
+        <h2 style="margin:34px 0 4px">Submitted combos</h2>
+        <p style="color:var(--muted);margin-bottom:14px">Community fusions — load any into the lab, vote with stars.</p>
+        <div id="fxCombos" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -57,12 +71,14 @@
   <div id="tMain">
     <div id="tFrameWrap">
       <iframe id="tFrame" title="style preview"></iframe>
+      <img id="tImg" alt="" style="display:none;max-width:100%;max-height:100%;margin:auto">
       <div id="tShield" title="Click to interact with the preview — arrow keys keep cycling styles"><span>⬅ ➡ cycle styles · click to interact with preview</span></div>
       <div id="tExt"><p>External site — iframes may be blocked.</p><a id="tExtLink" target="_blank" rel="noopener">Open in new tab ↗</a></div>
     </div>
     <div id="tPanel"></div>
   </div>
   <div id="tBar">
+    <button class="navbtn" id="tBack" title="Back (B)" style="visibility:hidden">← Back</button>
     <button class="navbtn" id="tPrev" title="Previous (←)">←</button>
     <button class="navbtn" id="tNext" title="Next (→)">→</button>
     <div id="tIdx"></div>
@@ -88,6 +104,7 @@
   <div class="box">
     <h3>Keyboard</h3>
     <div class="row"><span>Cycle styles (theater)</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
+    <div class="row"><span>Back through viewed styles</span><span><kbd>B</kbd> / Back button</span></div>
     <div class="row"><span>Move in gallery</span><span><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd></span></div>
     <div class="row"><span>Open theater</span><span><kbd>Enter</kbd></span></div>
     <div class="row"><span>Close theater / this</span><span><kbd>Esc</kbd></span></div>
@@ -95,7 +112,7 @@
     <div class="row"><span>Star / pick style</span><span><kbd>S</kbd></span></div>
     <div class="row"><span>Toggle chat</span><span><kbd>C</kbd></span></div>
     <div class="row"><span>Random style</span><span><kbd>R</kbd></span></div>
-    <div class="row"><span>Views</span><span><kbd>G</kbd> gallery · <kbd>V</kbd> collections · <kbd>P</kbd> picks</span></div>
+    <div class="row"><span>Views</span><span><kbd>G</kbd> gallery · <kbd>V</kbd> collections · <kbd>F</kbd> fusion · <kbd>P</kbd> picks</span></div>
     <div class="row"><span>Help</span><span><kbd>?</kbd></span></div>
     <div style="margin-top:14px"><button class="tbtn primary" style="width:100%" onclick="document.getElementById('help').classList.remove('open')">Got it</button></div>
   </div>
@@ -103,6 +120,7 @@
 
 <div id="toast"></div>
 <script src="/app.js"></script>
+<script src="/fusion.js"></script>
 <script src="/chatbot.js"></script>
 </body>
 </html>
